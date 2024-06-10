@@ -105,15 +105,15 @@
       </div>
     </div>
   
-    <div class="w-full sm:w-1/3 mt-4 sm:ml-4 py-20 mr-7">
+    <div class="hidden lg:block w-full lg:w-1/3 mt-4 sm:ml-4 py-20 mr-7">
       <div class="flex flex-col gap-9">
         <a href="/articlefood">
-        <div class="flex items-start h-44 rounded-xl overflow-hidden">
-          <img src="https://i.ibb.co/9rhVndP/Screenshot-2024-03-11-112807.png" alt="" class="rounded-xl h-full w-[220px]">
+        <div class="flex items-start md:h-30 h-44 rounded-xl overflow-hidden md:px-5 lg:p-0">
+          <img src="https://i.ibb.co/9rhVndP/Screenshot-2024-03-11-112807.png" alt="" class="rounded-xl sm:h-20 md:h-40 lg:h-36 xl:h-44 w-[220px] md:ml-10 lg:m-0">
           <div class="flex flex-col mx-2 gap-2">
-            <span class=" font-bold text-orange-300">Food</span>
+            <span class="font-bold text-orange-300">Food</span>
             <span class="text-sm">Senin 15 November 2023</span>
-            <p class="font-semibold">Mendalaminya bagaimana komputer kuantum akan mengubah paradigma komputasi saat ini.</p>
+            <p class="font-semibold md:text-xs">Mendalaminya bagaimana komputer kuantum akan mengubah paradigma komputasi saat ini.</p>
           </div>
         </div>
       </a>
@@ -183,7 +183,7 @@
   <!-- Rekomendasi -->
   <div class="flex flex-col md:flex-row px-10">
 
-    <div class="md:w-2/3 md:order-1 sm:p-10">
+    <div class="md:w-2/3 md:order-1 sm:px-10 hidden lg:block">
       <div class="flex justify-start items-start">
         <div class="bg-[#00A9FF] h-10 w-5"></div>
         <h1 class="text-4xl">Rekomendasi</h1>
@@ -259,66 +259,66 @@
 
   <div class="flex flex-col md:flex-row">
 
-    <div class="md:w-2/3 mb-4 md:mb-0 md:order-1 p-20">
-      <div class="flex justify-start items-start p-10">
-        <div class="bg-[#00A9FF] h-10 w-5"></div>
-        <h1 class="text-4xl">Berita Baru</h1>
-      </div>
-      <hr class="border-black">
-      <div class="bg-white px-4 py-10">
-        <div class="flex flex-col gap-10">
-          <div class="flex items-start">
-            <img src="https://i.ibb.co/DYYXm48/Screenshot-2024-03-05-130327.png" alt="" class="rounded-xl">
-            <div class="flex flex-col p-2 justify-center items-start py-5">
-              <p class="font-bold">Mendalaminya bagaimana komputer kuantum akan mengubah paradigma komputasi saat ini.</p>
-              <span class="mt-2 mb-2 font-bold text-orange-300">Food</span>
-              <span class="text-sm">Senin 15 November 2023</span>
-            </div>
+  <div class="md:w-2/3 mb-4 md:mb-0 p-4 md:p-20 order-2 md:order-1">
+    <div class="flex justify-start items-start p-4 md:p-10">
+      <div class="bg-[#00A9FF] h-10 w-5"></div>
+      <h1 class="text-4xl ml-2">Berita Baru</h1>
+    </div>
+    <hr class="border-black">
+    <div class="bg-white px-4 py-10">
+      <div class="flex flex-col gap-10">
+        <div class="flex items-start">
+          <img src="https://i.ibb.co/DYYXm48/Screenshot-2024-03-05-130327.png" alt="" class="rounded-xl h-24 w-24 md:h-auto md:w-auto">
+          <div class="flex flex-col p-2 justify-center items-start py-5">
+            <p class="font-bold">Mendalaminya bagaimana komputer kuantum akan mengubah paradigma komputasi saat ini.</p>
+            <span class="mt-2 mb-2 font-bold text-orange-300">Food</span>
+            <span class="text-sm">Senin 15 November 2023</span>
           </div>
-          <div class="flex items-start">
-            <img src="https://i.ibb.co/C9w1SbL/Screenshot-2024-03-05-132040.png" alt="" class="rounded-xl">
-            <div class="flex flex-col p-2">
-              <p class="font-semibold">Mendalaminya bagaimana komputer kuantum akan mengubah paradigma komputasi saat ini.</p>
-              <span class="mt-2 mb-2 font-bold text-orange-300">Food</span>
-              <span class="text-sm">Senin 15 November 2023</span>
-            </div>
+        </div>
+        <div class="flex items-start">
+          <img src="https://i.ibb.co/C9w1SbL/Screenshot-2024-03-05-132040.png" alt="" class="rounded-xl h-24 w-24 md:h-auto md:w-auto">
+          <div class="flex flex-col p-2">
+            <p class="font-semibold">Mendalaminya bagaimana komputer kuantum akan mengubah paradigma komputasi saat ini.</p>
+            <span class="mt-2 mb-2 font-bold text-orange-300">Food</span>
+            <span class="text-sm">Senin 15 November 2023</span>
           </div>
-          <div class="flex items-start">
-            <img src="https://i.ibb.co/1ZN340c/Screenshot-2024-03-05-132127.png" alt="" class="rounded-xl">
-            <div class="flex flex-col p-2">
-              <p class="font-semibold">Mendalaminya bagaimana komputer kuantum akan mengubah paradigma komputasi saat ini.</p>
-              <span class="mt-2 mb-2 font-bold text-orange-300">Food</span>
-              <span class="text-sm">Senin 15 November 2023</span>
-            </div>
+        </div>
+        <div class="flex items-start">
+          <img src="https://i.ibb.co/1ZN340c/Screenshot-2024-03-05-132127.png" alt="" class="rounded-xl h-24 w-24 md:h-auto md:w-auto">
+          <div class="flex flex-col p-2">
+            <p class="font-semibold">Mendalaminya bagaimana komputer kuantum akan mengubah paradigma komputasi saat ini.</p>
+            <span class="mt-2 mb-2 font-bold text-orange-300">Food</span>
+            <span class="text-sm">Senin 15 November 2023</span>
           </div>
-          <div class="flex items-start">
-            <img src="https://i.ibb.co/s1Sj0QT/Screenshot-2024-03-05-132203.png" alt="" class="rounded-xl">
-            <div class="flex flex-col p-2">
-              <p class="font-semibold">Mendalaminya bagaimana komputer kuantum akan mengubah paradigma komputasi saat ini.</p>
-              <span class="mt-2 mb-2 font-bold text-orange-300">Food</span>
-              <span class="text-sm">Senin 15 November 2023</span>
-            </div>
+        </div>
+        <div class="flex items-start">
+          <img src="https://i.ibb.co/s1Sj0QT/Screenshot-2024-03-05-132203.png" alt="" class="rounded-xl h-24 w-24 md:h-auto md:w-auto">
+          <div class="flex flex-col p-2">
+            <p class="font-semibold">Mendalaminya bagaimana komputer kuantum akan mengubah paradigma komputasi saat ini.</p>
+            <span class="mt-2 mb-2 font-bold text-orange-300">Food</span>
+            <span class="text-sm">Senin 15 November 2023</span>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="md:w-1/3 md:order-2 p-20">
-      <div class="flex justify-start items-start p-10">
-        <div class="bg-[#00A9FF] h-10 w-5"></div>
-        <h1 class="text-4xl">Follow Us :</h1>
-      </div>
-      <hr class="border-black">
-      <div class="bg-white p-4">
-        <div class="bg-[#E4E4E4] p-20 h-[550px] w-">
-          <h1 class="flex justify-center items-center text-3xl font-bold p-10">Ads / iklan posisi  tidak fixed</h1>
-        </div>
-      </div>
-    </div>
-
   </div>
 
-  <div class="mt-4 grid grid-cols-3 gap-20 p-20">
+  <div class="md:w-1/3 p-4 md:p-20 order-1 md:order-2">
+    <div class="flex justify-start items-start p-4 md:p-10">
+      <div class="bg-[#00A9FF] h-10 w-5"></div>
+      <h1 class="text-4xl ml-2">Follow Us :</h1>
+    </div>
+    <hr class="border-black">
+    <div class="bg-white p-4">
+      <div class="bg-[#E4E4E4] p-10 md:p-20 h-auto md:h-[550px]">
+        <h1 class="flex justify-center items-center text-3xl font-bold p-10">Ads / iklan posisi tidak fixed</h1>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+  <div class="mt-4 grid md:gird-cols-1 lg:grid-cols-3 gap-20 p-20">
     <div class="">
       <div class="flex mb-5">
         <div class="bg-[#00A9FF] h-10 w-5"></div>
@@ -457,28 +457,28 @@
     <div class="mx-auto w-full max-w-screen-xl p-2 py-6 lg:py-8">
       <div class="md:flex md:justify-between ml-[55px]">
         <div class="mt-1 grid grid-cols-4 gap-20 sm:grid-cols-4 sm:gap-60">
-          <div>
+          <div class="hidden lg:block">
             <ul class="font-bold text-black">
               <p>Entertaiment</p>
               <p>Food</p>
               <p>Inpirational</p>
             </ul>
           </div>
-          <div>
+          <div class="hidden lg:block">
             <ul class="font-medium text-black">
               <p>Entertaiment</p>
               <p>Food</p>
               <p>Inpirational</p>
             </ul>
           </div>
-          <div>
+          <div class="hidden lg:block">
             <ul class="font-medium text-black">
               <p>Entertaiment</p>
               <p>Food</p>
               <p>Inpirational</p>
             </ul>
           </div>
-          <div>
+          <div class="hidden lg:block">
             <ul class="font-medium text-black">
               <p>Entertaiment</p>
               <p>Food</p>
@@ -487,13 +487,13 @@
           </div>
         </div>
       </div>
-      <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8 dark:border-gray-700" />
+      <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8 dark:border-gray-700 hidden lg:block" />
       <div class="mt-1 grid grid-cols-3 gap-20 sm:grid-cols-3 sm:gap-60">
-        <div>
+        <div class="flex flex-col items-center sm:items-start sm:flex-row">
           <img src="https://i.ibb.co/kBVssdS/youtzmedia-1-removebg-preview.png" alt="" class="h-24 w-24">
         <span class="mt-2 ml-1 text-sm text-black sm:text-start text-center">Hak Cipta © 2024 <a href="https://flowbite.com/" class="hover:underline">Youtz Media</a>All Rights Reserved. </span>
         </div>
-        <div>
+        <div class="">
           <ul class="text-black">
             <p class="font-bold">Entertaiment</p>
             <p>FAQ</p>
@@ -536,7 +536,7 @@
             </div>
           </ul>
         </div>
-        <div>
+        <div class="hidden lg:block">
           <ul class="text-black">
             <p class="font-bold">Location</p>
             <p>Jl. Lengkong Gudang Timur Raya No.79 A, Lengkong Gudang Timur, Kec. Serpong, Kota Tangerang Selatan, Banten 15310</p>
