@@ -78,7 +78,7 @@
 
     <div class="w-full sm:w-2/3 p-20">
       <div class="relative bg-black h-[348px] rounded-xl overflow-hidden transition-transform duration-300 transform hover:scale-105">
-        <img src="https://i.ibb.co/hmzX0Kz/Screenshot-2024-03-10-172537.png" alt="" class="h-full w-full object-cover">
+        <img src="{{ asset('images/latest1.png') }}" alt="" class="h-full w-full object-cover">
         <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
         <div class="absolute bottom-0 left-0 flex flex-col justify-end p-5 text-white">
             <span class="relative z-10 bg-black p-2 w-20 text-center rounded-[60px]">Travel</span>    
@@ -87,7 +87,7 @@
       </div>    
       <div class="hidden sm:grid grid-cols-3 gap-4 my-10">
         <div class="relative bg-black mr-5 h-60 rounded-xl overflow-hidden transition-transform duration-300 transform hover:scale-105">
-          <img src="https://i.ibb.co/6N9wXps/Screenshot-2024-03-10-173020.png" alt="" class="h-full w-full object-cover">
+          <img src="{{ asset('images/latest3.png') }}" alt="" class="h-full w-full object-cover">
           <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
           <div class="absolute bottom-0 left-0 p-4 text-white">
             <span class="relative z-10 bg-black p-2 w-20 text-center rounded-[60px]">Tech</span>
@@ -95,7 +95,7 @@
           </div>
         </div>
         <div class="col-span-2 h-60 bg-black rounded-xl relative overflow-hidden transition-transform duration-300 transform hover:scale-105">
-          <img src="https://i.ibb.co/SNTC9WK/Screenshot-2024-03-10-173055.png" alt="" class="h-full w-full object-cover">
+          <img src="{{ asset('images/latest.png') }}" alt="" class="h-full w-full object-cover">
           <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
           <div class="absolute bottom-0 left-0 p-4 text-white">
               <span class="relative z-10 bg-black p-2 w-20 text-center rounded-full">News</span>
@@ -144,37 +144,37 @@
     <h1 class="text-4xl">Highlights</h1>
   </div>
   <hr class="border-black mx-20">
-  <div class="flex justify-between flex-row gap-10 overflow-x-auto px-20 py-10">
+    <div class="flex justify-between flex-row gap-10 overflow-x-auto px-20 py-10">
     <div class="relative">
       <div class="h-80 w-80 overflow-hidden rounded-2xl transition-transform duration-300 transform hover:scale-105">
         <img src="https://i.ibb.co/B4j73t6/Screenshot-2024-03-17-140137.png" alt="" class="h-full w-auto object-fill">
       </div>
-      <div class="absolute bottom-[-40px] left-[120px] transform -translate-x-1/2 w-40 text-center">
-        <p class="bg-[#D9D9D9] rounded-2xl h-[100px] w-60 flex justify-center items-center shadow-xl font-semibold">Mendalaminya bagaimana komputer kuantum akan</p>
+      <div class="absolute bottom-[-40px] left-1/2 transform -translate-x-1/2 w-full text-center">
+        <p class="bg-[#D9D9D9] rounded-2xl h-[100px] w-60 flex justify-center items-center shadow-xl font-semibold mx-auto">Mendalaminya bagaimana komputer kuantum akan</p>
       </div>
     </div>
     <div class="relative">
       <div class="h-80 w-80 overflow-hidden rounded-2xl transition-transform duration-300 transform hover:scale-105">
         <img src="https://i.ibb.co/CtGGtvX/Screenshot-2024-03-17-140423.png" alt="" class="h-full w-auto object-fill">
       </div>
-      <div class="absolute bottom-[-40px] left-[120px] transform -translate-x-1/2 w-40 text-center">
-        <p class="bg-[#D9D9D9] rounded-2xl h-[100px] w-60 flex justify-center items-center shadow-xl font-semibold">Mendalaminya bagaimana komputer kuantum akan</p>
+      <div class="absolute bottom-[-40px] left-1/2 transform -translate-x-1/2 w-full text-center">
+        <p class="bg-[#D9D9D9] rounded-2xl h-[100px] w-60 flex justify-center items-center shadow-xl font-semibold mx-auto">Mendalaminya bagaimana komputer kuantum akan</p>
       </div>
     </div>
     <div class="relative">
       <div class="h-80 w-80 overflow-hidden rounded-2xl transition-transform duration-300 transform hover:scale-105">
         <img src="https://i.ibb.co/Sm50nRT/Screenshot-2024-03-17-140520.png" alt="" class="h-full w-auto object-cover">
       </div>
-      <div class="absolute bottom-[-40px] left-[120px] transform -translate-x-1/2 w-40 text-center">
-        <p class="bg-[#D9D9D9] rounded-2xl h-[100px] w-60 flex justify-center items-center shadow-xl font-semibold">Mendalaminya bagaimana komputer kuantum akan</p>
+      <div class="absolute bottom-[-40px] left-1/2 transform -translate-x-1/2 w-full text-center">
+        <p class="bg-[#D9D9D9] rounded-2xl h-[100px] w-60 flex justify-center items-center shadow-xl font-semibold mx-auto">Mendalaminya bagaimana komputer kuantum akan</p>
       </div>
     </div>
     <div class="relative">
       <div class="h-80 w-80 overflow-hidden rounded-2xl transition-transform duration-300 transform hover:scale-105">
         <img src="https://i.ibb.co/TvFXgwY/Screenshot-2024-03-17-140553.png" alt="" class="h-full w-auto object-fill">
       </div>
-      <div class="absolute bottom-[-40px] left-[120px] transform -translate-x-1/2 w-40 text-center">
-        <p class="bg-[#D9D9D9] rounded-2xl h-[100px] w-60 flex justify-center items-center shadow-xl font-semibold">Mendalaminya bagaimana komputer kuantum akan</p>
+      <div class="absolute bottom-[-40px] left-1/2 transform -translate-x-1/2 w-full text-center">
+        <p class="bg-[#D9D9D9] rounded-2xl h-[100px] w-60 flex justify-center items-center shadow-xl font-semibold mx-auto">Mendalaminya bagaimana komputer kuantum akan</p>
       </div>
     </div>
   </div>
