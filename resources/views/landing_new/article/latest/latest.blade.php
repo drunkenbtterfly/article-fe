@@ -5,34 +5,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Latest</title>
   <style src="../output.css"></style>
+  <style>
+    .menu {
+      display: none;
+    }
+
+    .menu.active {
+      display: block;
+    }
+  </style>
   <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
 </head>
 <body>
-  <header>
-    <nav class="bg-white p-4 mx-20 my-4">
-      <div class="flex items-center justify-between">
-        <!-- Logo di bagian kiri -->
-        <div class="font-bold text-lg flex items-center">
-          <a href="#">
-            <img src="https://i.ibb.co/kBVssdS/youtzmedia-1-removebg-preview.png" alt="Logo" class="h-[80px]">
-            <!-- Ganti "h-8" dengan tinggi yang sesuai dengan desain Anda -->
-          </a>
+<header>
+  <nav class="bg-white p-4 mx-2 my-4">
+        <div class="flex items-center justify-between">
+            <!-- Logo di bagian kiri -->
+            <div class="font-bold text-lg flex items-center">
+                <a href="#">
+                    <img src="https://i.ibb.co/kBVssdS/youtzmedia-1-removebg-preview.png" alt="Logo" class="h-[80px]">
+                </a>
+            </div>
+        
+            <!-- Tombol hamburger untuk mobile -->
+            <div class="md:hidden">
+                <button id="hamburger" class="text-black focus:outline-none">
+                    <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        
+            <!-- Menu di bagian kanan -->
+            <div id="menu" class="hidden md:flex md:items-center md:space-x-4">
+                <a href="#" class="text-2xl font-bold">Home</a>
+                <a href="#" class="text-2xl font-bold">Incubator</a>
+                <a href="#" class="text-2xl font-bold">FAQ</a>
+                <a href="#" class="text-2xl font-bold ml-10">Contact</a>
+                <a href="#" class="text-black">
+                    <svg class="h-8 w-8 inline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35"/>
+                        <circle cx="11" cy="11" r="8"/>
+                    </svg>
+                </a>
+            </div>
         </div>
-    
-        <!-- Menu di bagian kanan -->
-        <div class="flex items-center space-x-4">
-          <a href="#" class="text-2xl font-bold">Home</a>
-          <a href="#" class="text-2xl font-bold">Incubator</a>
-          <a href="#" class="text-2xl font-bold">FAQ</a>
-          <a href="#" class="text-2xl font-bold ml-10">Contact</a>
-          <a href="#" class="text-black">
-            <svg class="h-8 w-8 inline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35"/>
-              <circle cx="11" cy="11" r="8"/>
-            </svg>
-          </a>
-        </div>        
-      </div>
+        
+        <!-- Menu untuk mobile -->
+        <div id="mobile-menu" class="menu md:hidden">
+            <a href="#" class="block text-2xl font-bold py-2">Home</a>
+            <a href="#" class="block text-2xl font-bold py-2">Incubator</a>
+            <a href="#" class="block text-2xl font-bold py-2">FAQ</a>
+            <a href="#" class="block text-2xl font-bold py-2">Contact</a>
+        </div>
     </nav>
     <hr class="border-black">
     <nav class="p-2">
@@ -109,7 +134,7 @@
       <div class="flex flex-col gap-9">
         <a href="/articlefood">
         <div class="flex items-start md:h-30 h-44 rounded-xl overflow-hidden md:px-5 lg:p-0">
-          <img src="https://i.ibb.co/9rhVndP/Screenshot-2024-03-11-112807.png" alt="" class="rounded-xl sm:h-20 md:h-40 lg:h-36 xl:h-44 w-[220px] md:ml-10 lg:m-0">
+          <img src="{{ asset('images/latest1.png') }}" alt="" class="rounded-xl sm:h-20 md:h-40 lg:h-36 xl:h-44 w-[220px] md:ml-10 lg:m-0">
           <div class="flex flex-col mx-2 gap-2">
             <span class="font-bold text-orange-300">Food</span>
             <span class="text-sm">Senin 15 November 2023</span>
@@ -118,7 +143,7 @@
         </div>
       </a>
         <div class="flex items-start h-44 rounded-xl overflow-hidden">
-          <img src="https://i.ibb.co/DrT3PZY/Screenshot-2024-03-11-112850.png" alt="" class="rounded-xl h-full w-[220px]">
+          <img src="{{ asset('images/latest1.png') }}" alt="" class="rounded-xl h-full w-[220px]">
           <div class="flex flex-col mx-2 gap-2">
             <span class=" font-bold text-[#00A9FF]">Health</span>
             <span class="text-sm">Senin 15 November 2023</span>
@@ -126,7 +151,7 @@
           </div>
         </div>
         <div class="flex items-start h-44 rounded-xl overflow-hidden">
-          <img src="https://i.ibb.co/nwPRQsk/Screenshot-2024-03-11-112934.png" alt="" class="rounded-xl h-full w-[220px]">
+          <img src="{{ asset('images/latest1.png') }}" alt="" class="rounded-xl h-full w-[220px]">
           <div class="flex flex-col mx-2 gap-2">
             <span class=" font-bold text-[#EE463C]">Sport</span>
             <span class="text-sm">Senin 15 November 2023</span>
@@ -147,7 +172,7 @@
     <div class="flex justify-between flex-row gap-10 overflow-x-auto px-20 py-10">
     <div class="relative">
       <div class="h-80 w-80 overflow-hidden rounded-2xl transition-transform duration-300 transform hover:scale-105">
-        <img src="https://i.ibb.co/B4j73t6/Screenshot-2024-03-17-140137.png" alt="" class="h-full w-auto object-fill">
+        <img src="{{ asset('images/latest1.png') }}" alt="" class="h-full w-auto object-fill">
       </div>
       <div class="absolute bottom-[-40px] left-1/2 transform -translate-x-1/2 w-full text-center">
         <p class="bg-[#D9D9D9] rounded-2xl h-[100px] w-60 flex justify-center items-center shadow-xl font-semibold mx-auto">Mendalaminya bagaimana komputer kuantum akan</p>
@@ -155,7 +180,7 @@
     </div>
     <div class="relative">
       <div class="h-80 w-80 overflow-hidden rounded-2xl transition-transform duration-300 transform hover:scale-105">
-        <img src="https://i.ibb.co/CtGGtvX/Screenshot-2024-03-17-140423.png" alt="" class="h-full w-auto object-fill">
+        <img src="{{ asset('images/latest1.png') }}" alt="" class="h-full w-auto object-fill">
       </div>
       <div class="absolute bottom-[-40px] left-1/2 transform -translate-x-1/2 w-full text-center">
         <p class="bg-[#D9D9D9] rounded-2xl h-[100px] w-60 flex justify-center items-center shadow-xl font-semibold mx-auto">Mendalaminya bagaimana komputer kuantum akan</p>
@@ -163,7 +188,7 @@
     </div>
     <div class="relative">
       <div class="h-80 w-80 overflow-hidden rounded-2xl transition-transform duration-300 transform hover:scale-105">
-        <img src="https://i.ibb.co/Sm50nRT/Screenshot-2024-03-17-140520.png" alt="" class="h-full w-auto object-cover">
+        <img src="{{ asset('images/latest1.png') }}" alt="" class="h-full w-auto object-cover">
       </div>
       <div class="absolute bottom-[-40px] left-1/2 transform -translate-x-1/2 w-full text-center">
         <p class="bg-[#D9D9D9] rounded-2xl h-[100px] w-60 flex justify-center items-center shadow-xl font-semibold mx-auto">Mendalaminya bagaimana komputer kuantum akan</p>
@@ -171,7 +196,7 @@
     </div>
     <div class="relative">
       <div class="h-80 w-80 overflow-hidden rounded-2xl transition-transform duration-300 transform hover:scale-105">
-        <img src="https://i.ibb.co/TvFXgwY/Screenshot-2024-03-17-140553.png" alt="" class="h-full w-auto object-fill">
+        <img src="{{ asset('images/latest1.png') }}" alt="" class="h-full w-auto object-fill">
       </div>
       <div class="absolute bottom-[-40px] left-1/2 transform -translate-x-1/2 w-full text-center">
         <p class="bg-[#D9D9D9] rounded-2xl h-[100px] w-60 flex justify-center items-center shadow-xl font-semibold mx-auto">Mendalaminya bagaimana komputer kuantum akan</p>
@@ -190,7 +215,7 @@
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-10 px-3 sm:my-10">  
         <div class="relative bg-black h-[262px] border-1 border-black w-full rounded-xl shadow-3xl inset overflow-hidden">
-          <img src="https://i.ibb.co/yhKvFLf/Screenshot-2024-03-10-143949.png" alt="" class="w-full h-full object-cover">
+          <img src="{{ asset('images/latest1.png') }}" alt="" class="w-full h-full object-cover">
           <div class="absolute inset-0 flex items-end justify-start">
             <div class="w-full bg-gradient-to-b from-transparent to-black text-white p-4 rounded-b-xl">
               <p class="text-lg font-semibold">Lorem ipsum dolor sit amet</p>
@@ -198,7 +223,7 @@
           </div>    
         </div>
         <div class="relative bg-black h-[262px] border-1 border-black w-full rounded-xl shadow-3xl inset overflow-hidden">
-          <img src="https://i.ibb.co/VJGCvph/Screenshot-2024-03-10-144505.png" alt="" class="w-full h-full object-cover">   
+          <img src="{{ asset('images/latest1.png') }}" alt="" class="w-full h-full object-cover">   
           <div class="absolute inset-0 flex items-end justify-start">
             <div class="w-full bg-gradient-to-b from-transparent to-black text-white p-4 rounded-b-xl">
               <p class="text-lg font-semibold">Lorem ipsum dolor sit amet</p>
@@ -206,7 +231,7 @@
           </div> 
         </div>
         <div class="relative bg-black h-[262px] border-1 border-black w-full rounded-xl shadow-3xl inset overflow-hidden">
-          <img src="https://i.ibb.co/sQqZM6d/Screenshot-2024-03-10-144716.png" alt="" class="w-full h-full object-cover">  
+          <img src="{{ asset('images/latest1.png') }}" alt="" class="w-full h-full object-cover">  
           <div class="absolute inset-0 flex items-end justify-start">
             <div class="w-full bg-gradient-to-b from-transparent to-black text-white p-4 rounded-b-xl">
               <p class="text-lg font-semibold">Lorem ipsum dolor sit amet</p>
@@ -214,7 +239,7 @@
           </div>  
         </div>
         <div class="relative bg-black h-[262px] border-1 border-black w-full rounded-xl shadow-3xl inset overflow-hidden">
-          <img src="https://i.ibb.co/QHzH7t2/Screenshot-2024-03-10-144816.png" alt="" class="w-full h-full object-cover">    
+          <img src="{{ asset('images/latest1.png') }}" alt="" class="w-full h-full object-cover">    
           <div class="absolute inset-0 flex items-end justify-start">
             <div class="w-full bg-gradient-to-b from-transparent to-black text-white p-4 rounded-b-xl">
               <p class="text-lg font-semibold">Lorem ipsum dolor sit amet</p>
@@ -222,7 +247,7 @@
           </div>
         </div>
         <div class="relative bg-black h-[262px] border-1 border-black w-full rounded-xl shadow-3xl inset overflow-hidden">
-          <img src="https://i.ibb.co/71mxwzp/Screenshot-2024-03-10-145032.png" alt="" class="w-full h-full object-cover">    
+          <img src="{{ asset('images/latest1.png') }}" alt="" class="w-full h-full object-cover">    
           <div class="absolute inset-0 flex items-end justify-start">
             <div class="w-full bg-gradient-to-b from-transparent to-black text-white p-4 rounded-b-xl">
               <p class="text-lg font-semibold">Lorem ipsum dolor sit amet</p>
@@ -230,7 +255,7 @@
           </div>
         </div>
         <div class="relative bg-black h-[262px] border-1 border-black w-full rounded-xl shadow-3xl inset overflow-hidden">
-          <img src="https://i.ibb.co/99tyMm5/Screenshot-2024-03-10-145133.png" alt="" class="w-full h-full object-cover">    
+          <img src="{{ asset('images/latest1.png') }}" alt="" class="w-full h-full object-cover">    
           <div class="absolute inset-0 flex items-end justify-start">
             <div class="w-full bg-gradient-to-b from-transparent to-black text-white p-4 rounded-b-xl">
               <p class="text-lg font-semibold">Lorem ipsum dolor sit amet</p>
@@ -268,7 +293,7 @@
     <div class="bg-white px-4 py-10">
       <div class="flex flex-col gap-10">
         <div class="flex items-start">
-          <img src="https://i.ibb.co/DYYXm48/Screenshot-2024-03-05-130327.png" alt="" class="rounded-xl h-24 w-24 md:h-auto md:w-auto">
+          <img src="{{ asset('images/latest1.png') }}" alt="" class="rounded-xl h-24 w-24 md:h-auto md:w-auto">
           <div class="flex flex-col p-2 justify-center items-start py-5">
             <p class="font-bold">Mendalaminya bagaimana komputer kuantum akan mengubah paradigma komputasi saat ini.</p>
             <span class="mt-2 mb-2 font-bold text-orange-300">Food</span>
@@ -276,7 +301,7 @@
           </div>
         </div>
         <div class="flex items-start">
-          <img src="https://i.ibb.co/C9w1SbL/Screenshot-2024-03-05-132040.png" alt="" class="rounded-xl h-24 w-24 md:h-auto md:w-auto">
+          <img src="{{ asset('images/latest1.png') }}" alt="" class="rounded-xl h-24 w-24 md:h-auto md:w-auto">
           <div class="flex flex-col p-2">
             <p class="font-semibold">Mendalaminya bagaimana komputer kuantum akan mengubah paradigma komputasi saat ini.</p>
             <span class="mt-2 mb-2 font-bold text-orange-300">Food</span>
@@ -284,7 +309,7 @@
           </div>
         </div>
         <div class="flex items-start">
-          <img src="https://i.ibb.co/1ZN340c/Screenshot-2024-03-05-132127.png" alt="" class="rounded-xl h-24 w-24 md:h-auto md:w-auto">
+          <img src="{{ asset('images/latest1.png') }}" alt="" class="rounded-xl h-24 w-24 md:h-auto md:w-auto">
           <div class="flex flex-col p-2">
             <p class="font-semibold">Mendalaminya bagaimana komputer kuantum akan mengubah paradigma komputasi saat ini.</p>
             <span class="mt-2 mb-2 font-bold text-orange-300">Food</span>
@@ -292,7 +317,7 @@
           </div>
         </div>
         <div class="flex items-start">
-          <img src="https://i.ibb.co/s1Sj0QT/Screenshot-2024-03-05-132203.png" alt="" class="rounded-xl h-24 w-24 md:h-auto md:w-auto">
+          <img src="{{ asset('images/latest1.png') }}" alt="" class="rounded-xl h-24 w-24 md:h-auto md:w-auto">
           <div class="flex flex-col p-2">
             <p class="font-semibold">Mendalaminya bagaimana komputer kuantum akan mengubah paradigma komputasi saat ini.</p>
             <span class="mt-2 mb-2 font-bold text-orange-300">Food</span>
@@ -325,7 +350,7 @@
         <h1 class="text-4xl font-semibold ml-3">Entertaiment</h1>
       </div>
       <div class="relative h-[270px]">
-        <img src="https://i.ibb.co/phszmBN/Screenshot-2024-03-09-103149.png" alt="Deskripsi gambar" class="h-full w-full rounded-xl" />
+        <img src="{{ asset('images/entertaiment.png') }}" alt="Deskripsi gambar" class="h-full w-full rounded-xl" />
         <div class="absolute inset-0 flex items-end justify-start">
           <div class="w-full bg-gradient-to-b from-transparent to-[#4F4D4D] text-white p-4 rounded-b-xl">
             <p class="text-lg font-semibold">Lorem ipsum dolor sit amet</p>
@@ -339,7 +364,7 @@
         <h1 class="text-4xl font-semibold ml-3">Health</h1>
       </div>
       <div class="relative h-[270px]">
-        <img src="https://i.ibb.co/PMdKmDj/Screenshot-2024-03-09-110447.png" alt="Deskripsi gambar" class="h-full w-full rounded-xl" />
+        <img src="{{ asset('images/health.png') }}" alt="Deskripsi gambar" class="h-full w-full rounded-xl" />
         <div class="absolute inset-0 flex items-end justify-start">
           <div class="w-full bg-gradient-to-b from-transparent to-[#4F4D4D] text-white p-4 rounded-b-xl">
             <p class="text-lg font-semibold">Lorem ipsum dolor sit amet</p>
@@ -353,7 +378,7 @@
         <h1 class="text-4xl font-semibold ml-3">Food</h1>
       </div>
       <div class="relative h-[270px]">
-        <img src="https://i.ibb.co/Q8CW1zV/Screenshot-2024-03-09-110530.png" alt="Deskripsi gambar" class="h-full w-full rounded-xl" />
+        <img src="{{ asset('images/food.png') }}" alt="Deskripsi gambar" class="h-full w-full rounded-xl" />
         <div class="absolute inset-0 flex items-end justify-start">
           <div class="w-full bg-gradient-to-b from-transparent to-[#4F4D4D] text-white p-4 rounded-b-xl">
             <p class="text-lg font-semibold">Lorem ipsum dolor sit amet</p>
@@ -367,7 +392,7 @@
         <h1 class="text-4xl font-semibold ml-3">News</h1>
       </div>
       <div class="relative h-[270px]">
-        <img src="https://i.ibb.co/q1BM1QV/Screenshot-2024-03-09-110619.png" alt="Deskripsi gambar" class="h-full w-full rounded-xl" />
+        <img src="{{ asset('images/news.png') }}" alt="Deskripsi gambar" class="h-full w-full rounded-xl" />
         <div class="absolute inset-0 flex items-end justify-start">
           <div class="w-full bg-gradient-to-b from-transparent to-[#4F4D4D] text-white p-4 rounded-b-xl">
             <p class="text-lg font-semibold">Lorem ipsum dolor sit amet</p>
@@ -381,7 +406,7 @@
         <h1 class="text-4xl font-semibold ml-3">Travel</h1>
       </div>
       <div class="relative h-[270px]">
-        <img src="https://i.ibb.co/8sqGrBr/Screenshot-2024-03-09-110657.png" alt="Deskripsi gambar" class="h-full w-full rounded-xl" />
+        <img src="{{ asset('images/travel.png') }}" alt="Deskripsi gambar" class="h-full w-full rounded-xl" />
         <div class="absolute inset-0 flex items-end justify-start">
           <div class="w-full bg-gradient-to-b from-transparent to-[#4F4D4D] text-white p-4 rounded-b-xl">
             <p class="text-lg font-semibold">Lorem ipsum dolor sit amet</p>
@@ -395,7 +420,7 @@
         <h1 class="text-4xl font-semibold ml-3">Finance</h1>
       </div>
       <div class="relative h-[270px]">
-        <img src="https://i.ibb.co/ZNPm8P9/Screenshot-2024-03-09-110747.png" alt="Deskripsi gambar" class="h-full w-full rounded-xl" />
+        <img src="{{ asset('images/finance.png') }}" alt="Deskripsi gambar" class="h-full w-full rounded-xl" />
         <div class="absolute inset-0 flex items-end justify-start">
           <div class="w-full bg-gradient-to-b from-transparent to-[#4F4D4D] text-white p-4 rounded-b-xl">
             <p class="text-lg font-semibold">Lorem ipsum dolor sit amet</p>
@@ -409,7 +434,7 @@
         <h1 class="text-4xl font-semibold ml-3">Sport</h1>
       </div>
       <div class="relative h-[270px]">
-        <img src="https://i.ibb.co/ZMDW7KL/Screenshot-2024-03-09-110933.png" alt="Deskripsi gambar" class="h-full w-full rounded-xl" />
+        <img src="{{ asset('images/sports.png') }}" alt="Deskripsi gambar" class="h-full w-full rounded-xl" />
         <div class="absolute inset-0 flex items-end justify-start">
           <div class="w-full bg-gradient-to-b from-transparent to-[#4F4D4D] text-white p-4 rounded-b-xl">
             <p class="text-lg font-semibold">Lorem ipsum dolor sit amet</p>
@@ -423,7 +448,7 @@
         <h1 class="text-4xl font-semibold ml-3">Education</h1>
       </div>
       <div class="relative h-[270px]">
-        <img src="https://i.ibb.co/X2xZd3C/Screenshot-2024-03-09-111017.png" alt="Deskripsi gambar" class="h-full w-full rounded-xl" />
+        <img src="{{ asset('images/education.png') }}" alt="Deskripsi gambar" class="h-full w-full rounded-xl" />
         <div class="absolute inset-0 flex items-end justify-start">
           <div class="w-full bg-gradient-to-b from-transparent to-[#4F4D4D] text-white p-4 rounded-b-xl">
             <p class="text-lg font-semibold">Lorem ipsum dolor sit amet</p>
@@ -437,7 +462,7 @@
         <h1 class="text-4xl font-semibold ml-3">Tech</h1>
       </div>
       <div class="relative h-[270px]">
-        <img src="https://i.ibb.co/5Ty1Mbj/Screenshot-2024-03-09-111101.png" alt="Deskripsi gambar" class="h-full w-full rounded-xl" />
+        <img src="{{ asset('images/tech.png') }}" alt="Deskripsi gambar" class="h-full w-full rounded-xl" />
         <div class="absolute inset-0 flex items-end justify-start">
           <div class="w-full bg-gradient-to-b from-transparent to-[#4F4D4D] text-white p-4 rounded-b-xl">
             <p class="text-lg font-semibold">Lorem ipsum dolor sit amet</p>
@@ -545,6 +570,12 @@
       </div>
     </div>
   </footer>
+
+  <script>
+        document.getElementById('hamburger').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('active');
+        });
+    </script>
 
 </body>
 </html>

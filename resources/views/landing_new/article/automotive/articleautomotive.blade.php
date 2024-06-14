@@ -41,9 +41,7 @@ Sem viverra amet odio tempor cursus nibh ultricies sed. Bibendum rutrum facilisi
 <header>
     <nav class="bg-white p-4 mx-20 my-4">
     <div class="p-4 flex justify-between items-center">
-      <!-- Bagian Kiri dengan 5 Icons -->
       <div class="flex items-end space-x-4">
-        <!-- Ganti URL gambar sesuai dengan ikon yang diinginkan -->
         <img src="https://i.ibb.co/9vryN6W/Screenshot-2024-03-09-125459.png" alt="Icon 1" class="h-6 w-6 rounded-[30px]" />
         <img src="https://i.ibb.co/FVMXs8K/Screenshot-2024-03-09-125604.png" alt="Icon 2" class="h-6 w-6 rounded-[30px]" />
         <img src="https://i.ibb.co/bbV3cfD/Screenshot-2024-03-09-125719.png" alt="Icon 3" class="h-6 w-6 rounded-[30px]" />
@@ -51,13 +49,10 @@ Sem viverra amet odio tempor cursus nibh ultricies sed. Bibendum rutrum facilisi
         <img src="https://i.ibb.co/SXSX8QG/Screenshot-2024-03-09-125840.png" alt="Icon 5" class="h-6 w-6 rounded-[30px]" />
       </div>
     
-      <!-- Bagian Tengah dengan Logo -->
       <div class="flex-shrink-0">
-        <!-- Ganti URL gambar sesuai dengan logo yang diinginkan -->
         <img src="https://i.ibb.co/kBVssdS/youtzmedia-1-removebg-preview.png" alt="Logo" class="h-20 w-20" />
       </div>
     
-      <!-- Bagian Kanan dengan Tombol Search -->
       <div class="flex items-center relative">
         <input type="text" name="q" class="w-full border h-12 shadow p-4 rounded-full pl-12 placeholder-gray-500" placeholder="Search">
         <button type="submit" class="absolute left-0 flex items-center justify-center h-full w-12">

@@ -8,27 +8,75 @@
   <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
 </head>
 <body>
+<?php
+$articles = [
+    [
+        "img" => "images/latest1.png",
+        "desc" => "Ngeri! Resesi Amerika Bakal Terjadi Mulai Kuartal I/2024"
+    ],
+    [
+        "img" => "images/latest1.png",
+        "desc" => "Ngeri! Resesi Amerika Bakal Terjadi Mulai Kuartal I/2024"
+    ],
+    [
+        "img" => "images/latest1.png",
+        "desc" => "Ngeri! Resesi Amerika Bakal Terjadi Mulai Kuartal I/2024"
+    ],
+    [
+        "img" => "images/latest1.png",
+        "desc" => "Ngeri! Resesi Amerika Bakal Terjadi Mulai Kuartal I/2024"
+    ]
+];
+?>
 
-  <!-- Navbar -->
-  <nav class="bg-white p-4 text-black mx-[70px]">
-    <div class="p-4 flex justify-between items-center">
-      <!-- Bagian Kiri dengan 5 Icons -->
-      <div class="flex items-end space-x-4">
-        <!-- Ganti URL gambar sesuai dengan ikon yang diinginkan -->
+<!-- Navbar 1 -->
+<nav class="bg-white p-4 text-black mx-[20px]">
+  <div class="p-4 flex justify-between items-center">
+    <div class="flex items-end space-x-4 hidden md:flex">
+      <img src="https://i.ibb.co/9vryN6W/Screenshot-2024-03-09-125459.png" alt="Icon 1" class="h-6 w-6 rounded-[30px]" />
+      <img src="https://i.ibb.co/FVMXs8K/Screenshot-2024-03-09-125604.png" alt="Icon 2" class="h-6 w-6 rounded-[30px]" />
+      <img src="https://i.ibb.co/bbV3cfD/Screenshot-2024-03-09-125719.png" alt="Icon 3" class="h-6 w-6 rounded-[30px]" />
+      <img src="https://i.ibb.co/C9xCXkn/Screenshot-2024-03-09-125739.png" alt="Icon 4" class="h-6 w-6 rounded-[30px]" />
+      <img src="https://i.ibb.co/SXSX8QG/Screenshot-2024-03-09-125840.png" alt="Icon 5" class="h-6 w-6 rounded-[30px]" />
+    </div>
+
+    <!-- Logo -->
+    <div class="flex-shrink-0">
+      <img src="https://i.ibb.co/kBVssdS/youtzmedia-1-removebg-preview.png" alt="Logo" class="h-20 w-20" />
+    </div>
+
+    <!-- Search -->
+    <div class="flex items-center relative hidden md:flex">
+      <input type="text" name="q" class="w-full border h-12 shadow p-4 rounded-full pl-12 placeholder-gray-500" placeholder="Search">
+      <button type="submit" class="absolute left-0 flex items-center justify-center h-full w-12">
+        <svg class="text-black h-5 w-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.966 56.966">
+          <path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Hamburger Menu -->
+    <div class="md:hidden">
+      <button id="hamburger-button" class="focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile -->
+  <div id="mobile-menu" class="md:hidden hidden">
+    <div class="p-4">
+      <!-- Mobile Icons -->
+      <div class="flex items-end space-x-4 mb-4">
         <img src="https://i.ibb.co/9vryN6W/Screenshot-2024-03-09-125459.png" alt="Icon 1" class="h-6 w-6 rounded-[30px]" />
         <img src="https://i.ibb.co/FVMXs8K/Screenshot-2024-03-09-125604.png" alt="Icon 2" class="h-6 w-6 rounded-[30px]" />
         <img src="https://i.ibb.co/bbV3cfD/Screenshot-2024-03-09-125719.png" alt="Icon 3" class="h-6 w-6 rounded-[30px]" />
         <img src="https://i.ibb.co/C9xCXkn/Screenshot-2024-03-09-125739.png" alt="Icon 4" class="h-6 w-6 rounded-[30px]" />
         <img src="https://i.ibb.co/SXSX8QG/Screenshot-2024-03-09-125840.png" alt="Icon 5" class="h-6 w-6 rounded-[30px]" />
       </div>
-    
-      <!-- Bagian Tengah dengan Logo -->
-      <div class="flex-shrink-0">
-        <!-- Ganti URL gambar sesuai dengan logo yang diinginkan -->
-        <img src="https://i.ibb.co/kBVssdS/youtzmedia-1-removebg-preview.png" alt="Logo" class="h-20 w-20" />
-      </div>
-    
-      <!-- Bagian Kanan dengan Tombol Search -->
+      <!-- Mobile Search -->
       <div class="flex items-center relative">
         <input type="text" name="q" class="w-full border h-12 shadow p-4 rounded-full pl-12 placeholder-gray-500" placeholder="Search">
         <button type="submit" class="absolute left-0 flex items-center justify-center h-full w-12">
@@ -37,9 +85,9 @@
           </svg>
         </button>
       </div>
-      
-    </div>      
-  </nav>
+    </div>
+  </div>
+</nav>
   <nav class="p-2 bg-[#00A9FF]">
     <div class="flex justify-between items-center">
       <ul class="flex space-x-[40px] lg:space-x-[69px] text-2xl text-white font-bold overflow-x-auto mx-20">
@@ -85,7 +133,7 @@
       <div class="bg-[#EDEDED] h-[587px] rounded-[25px] shadow-xl">
         <div class="flex flex-row relative">
           <div class="bg-black h-[314px] w-full rounded-t-[15px] relative">
-              <img src="https://i.ibb.co/ynK0PkT/Screenshot-2024-03-03-202841.png" alt="Deskripsi Gambar" class="w-full h-full object-cover rounded-t-[15px]">
+              <img src="{{ asset('images/latest1.png') }}" alt="Deskripsi Gambar" class="w-full h-full object-cover rounded-t-[15px]">
               <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-[#00A9FF]"></div>
             <div class="absolute top-0 left-0 w-full h-full flex items-end justify-start p-5 text-white">
               <p>Ngeri! Resesi Amerika Bakal Terjadi Mulai Kuartal I/2024</p>
@@ -96,7 +144,7 @@
       <div class="flex">
         <div class="h-[273px] rounded-bl-[15px] w-1/3 overflow-hidden">
             <div class="h-full w-full relative">
-                <img src="https://i.ibb.co/7KNNrt0/Screenshot-2024-03-04-150236.png" alt="Deskripsi Gambar" class="w-full h-full rounded-bl-[15px] object-cover">
+                <img src="{{ asset('images/latest1.png') }}" alt="Deskripsi Gambar" class="w-full h-full rounded-bl-[15px] object-cover">
                 <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-[#00A9FF]"></div>
                 <div class="absolute top-0 left-0 w-full h-full flex items-end justify-start p-5 text-white">
                     <p>Top 3 Berita Bola: Pesaing Mundur Teratur,</p>
@@ -105,7 +153,7 @@
         </div>
         <div class=" h-[273px] bg-green-300 w-1/3 overflow-hidden">
             <div class="h-full w-full relative">
-                <img src="https://i.ibb.co/Gty9GdM/Screenshot-2024-03-04-152118.png" alt="Deskripsi Gambar" class="w-full h-full object-cover">
+                <img src="{{ asset('images/latest1.png') }}" alt="Deskripsi Gambar" class="w-full h-full object-cover">
                 <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-[#00A9FF]"></div>
                 <div class="absolute top-0 left-0 w-full h-full flex items-end justify-start p-5 text-white">
                     <p>Top 3 Berita Bola: Pesaing Mundur Teratur,</p>
@@ -114,7 +162,7 @@
         </div>
         <div class="bg-red-300 rounded-br-[15px] h-full w-1/3 overflow-hidden">
             <div class="h-[273px] w-full relative">
-                <img src="https://i.ibb.co/417N1Tr/Screenshot-2024-03-04-152354.png" alt="Deskripsi Gambar" class="w-full h-full rounded-br-[15px] object-cover">
+                <img src="{{ asset('images/latest1.png') }}" alt="Deskripsi Gambar" class="w-full h-full rounded-br-[15px] object-cover">
                 <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-[#00A9FF]"></div>
                 <div class="absolute top-0 left-0 w-full h-full flex flex-col justify-end p-5 text-white">
                   <span class="bg-black p-2 w-[55px]  rounded-xl mb-2 items-start">News</span>  
@@ -149,47 +197,18 @@
     <h1 class="text-4xl">Rekomendasi</h1>
   </div>
 
-  <div class="grid grid-cols-4 gap-10 p-20">
-
-      <div class="flex flex-row relative">
-        <div class="bg-black h-[364px] w-full rounded-[15px] relative overflow-hidden">
-          <img src="https://i.ibb.co/HBy1wq5/Screenshot-2024-03-04-160759.png" alt="Deskripsi Gambar" class="w-full h-full object-cover rounded-[15px]">
-          <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-black rounded-[15px]"></div>
-          <div class="absolute top-0 left-0 w-full h-full flex items-end justify-start p-5 text-white">
-              <p>Ngeri! Resesi Amerika Bakal Terjadi Mulai Kuartal I/2024</p>
-          </div>
-        </div>      
-      </div>
-
-      <div class="flex flex-row relative">
-        <div class="bg-black h-[364px] w-full rounded-[15px] relative overflow-hidden">
-          <img src="https://i.ibb.co/346ZkK2/Screenshot-2024-03-05-135737.png" alt="Deskripsi Gambar" class="w-full h-full object-cover rounded-[15px]">
-          <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-black rounded-[15px]"></div>
-          <div class="absolute top-0 left-0 w-full h-full flex items-end justify-start p-5 text-white">
-              <p>Ngeri! Resesi Amerika Bakal Terjadi Mulai Kuartal I/2024</p>
-          </div>
-        </div>      
-      </div>
-
-      <div class="flex flex-row relative">
-        <div class="bg-black h-[364px] w-full rounded-[15px] relative overflow-hidden">
-          <img src="https://i.ibb.co/NVrxkjn/Screenshot-2024-03-05-135834.png" alt="Deskripsi Gambar" class="w-full h-full object-cover rounded-[15px]">
-          <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-black rounded-[15px]"></div>
-          <div class="absolute top-0 left-0 w-full h-full flex items-end justify-start p-5 text-white">
-              <p>Ngeri! Resesi Amerika Bakal Terjadi Mulai Kuartal I/2024</p>
-          </div>
-        </div>      
-      </div>
-
-      <div class="flex flex-row relative">
-        <div class="bg-black h-[364px] w-full rounded-[15px] relative overflow-hidden">
-          <img src="https://i.ibb.co/V3F1vKS/Screenshot-2024-03-05-135923.png" alt="Deskripsi Gambar" class="w-full h-full object-cover rounded-[15px]">
-          <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-black rounded-[15px]"></div>
-          <div class="absolute top-0 left-0 w-full h-full flex items-end justify-start p-5 text-white">
-              <p>Ngeri! Resesi Amerika Bakal Terjadi Mulai Kuartal I/2024</p>
-          </div>
-        </div>      
-      </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 p-5 sm:p-10 lg:p-20">
+    <?php foreach ($articles as $article): ?>
+        <div class="flex flex-row relative">
+            <div class="bg-black h-64 sm:h-[364px] w-full rounded-[15px] relative overflow-hidden">
+                <img src="<?php echo asset($article['img']); ?>" alt="Deskripsi Gambar" class="w-full h-full object-cover rounded-[15px]">
+                <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-black rounded-[15px]"></div>
+                <div class="absolute top-0 left-0 w-full h-full flex items-end justify-start p-5 text-white">
+                    <p><?php echo $article['desc']; ?></p>
+                </div>
+            </div>      
+        </div>
+    <?php endforeach; ?>
   </div>
 
   <div class="py-5 px-20">
@@ -198,64 +217,71 @@
     </div>
   </div>
 
-  <!-- Berita -->
-  <div class="flex justify-start items-start p-10">
-    <div class="bg-[#00A9FF] h-10 w-5"></div>
-    <h1 class="text-4xl">Berita Baru</h1>
-  </div>
-
   <div class="flex flex-col md:flex-row">
 
-    <!-- Bagian Kiri -->
-    <div class="md:w-2/3 mb-4 md:mb-0 md:order-1 p-20">
-      <div class="bg-white p-4">
-        <div class="flex flex-col gap-10">
-          <div class="flex items-start">
-            <img src="https://i.ibb.co/DYYXm48/Screenshot-2024-03-05-130327.png" alt="" class="rounded-xl">
-            <div class="flex flex-col p-2">
-              <p class="font-semibold">Mendalaminya bagaimana komputer kuantum akan mengubah paradigma komputasi saat ini.</p>
-              <span class="mt-2 mb-2 font-bold text-orange-300">Food</span>
-              <span class="text-sm">Senin 15 November 2023</span>
-            </div>
-          </div>
-          <div class="flex items-start">
-            <img src="https://i.ibb.co/C9w1SbL/Screenshot-2024-03-05-132040.png" alt="" class="rounded-xl">
-            <div class="flex flex-col p-2">
-              <p class="font-semibold">Mendalaminya bagaimana komputer kuantum akan mengubah paradigma komputasi saat ini.</p>
-              <span class="mt-2 mb-2 font-bold text-orange-300">Food</span>
-              <span class="text-sm">Senin 15 November 2023</span>
-            </div>
-          </div>
-          <div class="flex items-start">
-            <img src="https://i.ibb.co/1ZN340c/Screenshot-2024-03-05-132127.png" alt="" class="rounded-xl">
-            <div class="flex flex-col p-2">
-              <p class="font-semibold">Mendalaminya bagaimana komputer kuantum akan mengubah paradigma komputasi saat ini.</p>
-              <span class="mt-2 mb-2 font-bold text-orange-300">Food</span>
-              <span class="text-sm">Senin 15 November 2023</span>
-            </div>
-          </div>
-          <div class="flex items-start">
-            <img src="https://i.ibb.co/s1Sj0QT/Screenshot-2024-03-05-132203.png" alt="" class="rounded-xl">
-            <div class="flex flex-col p-2">
-              <p class="font-semibold">Mendalaminya bagaimana komputer kuantum akan mengubah paradigma komputasi saat ini.</p>
-              <span class="mt-2 mb-2 font-bold text-orange-300">Food</span>
-              <span class="text-sm">Senin 15 November 2023</span>
-            </div>
-          </div>
+    <!-- Berita Baru -->
+    <div class="md:w-2/3 mb-4 md:mb-0 p-4 md:p-20 order-2 md:order-1">
+        <div class="flex justify-start items-start p-4 md:p-10">
+            <div class="bg-[#00A9FF] h-10 w-5"></div>
+            <h1 class="text-4xl ml-2">Berita Baru</h1>
         </div>
-      </div>
+        <hr class="border-black">
+        <div class="bg-white px-4 py-10">
+            <div class="flex flex-col gap-10">
+                <?php
+                $articles = [
+                    [
+                        "img" => "images/latest1.png",
+                        "title" => "Mendalaminya bagaimana komputer kuantum akan mengubah paradigma komputasi saat ini.",
+                        "category" => "Food",
+                        "date" => "Senin 15 November 2023"
+                    ],
+                    [
+                        "img" => "images/latest1.png",
+                        "title" => "Mendalaminya bagaimana komputer kuantum akan mengubah paradigma komputasi saat ini.",
+                        "category" => "Food",
+                        "date" => "Senin 15 November 2023"
+                    ],
+                    [
+                        "img" => "images/latest1.png",
+                        "title" => "Mendalaminya bagaimana komputer kuantum akan mengubah paradigma komputasi saat ini.",
+                        "category" => "Food",
+                        "date" => "Senin 15 November 2023"
+                    ],
+                    [
+                        "img" => "images/latest1.png",
+                        "title" => "Mendalaminya bagaimana komputer kuantum akan mengubah paradigma komputasi saat ini.",
+                        "category" => "Food",
+                        "date" => "Senin 15 November 2023"
+                    ]
+                ];
+                ?>
+
+                <?php foreach ($articles as $article): ?>
+                    <div class="flex items-start">
+                        <img src="<?php echo asset($article['img']); ?>" alt="Deskripsi Gambar" class="rounded-xl h-24 w-24 md:h-auto md:w-auto">
+                        <div class="flex flex-col p-2 justify-center items-start py-5">
+                            <p class="font-bold"><?php echo $article['title']; ?></p>
+                            <span class="mt-2 mb-2 font-bold text-orange-300"><?php echo $article['category']; ?></span>
+                            <span class="text-sm"><?php echo $article['date']; ?></span>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+        </div>
     </div>
 
-    <!-- Bagian Kanan -->
-    <div class="md:w-1/3 md:order-2 p-20">
-      <div class="bg-white p-4">
-        <div class="bg-[#E4E4E4] p-20 h-[550px] w-">
-          <h1 class="flex justify-center items-center text-3xl font-bold p-10">Ads / iklan posisi  tidak fixed</h1>
+    <!-- Ads -->
+    <div class="md:w-1/3 md:order-2 p-4 md:p-20 order-1">
+        <div class="bg-white p-4">
+            <div class="bg-[#E4E4E4] p-20 h-[550px] w-full">
+                <h1 class="flex justify-center items-center text-3xl font-bold p-10">Ads / iklan posisi tidak fixed</h1>
+            </div>
         </div>
-      </div>
     </div>
 
   </div>
+
 
   <div class="py-5 px-20">
     <div class="h-60 bg-gray-300 flex justify-center items-center">
@@ -356,25 +382,26 @@
     </div>
   
     <script>
-      // Ambil elemen tombol dropdown
+      // dropdown menu
       const dropdownButton = document.getElementById('dropdownDefaultButton');
-    
-      // Ambil elemen dropdown menu
       const dropdownMenu = document.getElementById('dropdown');
-    
-      // Tambahkan event listener untuk mengatur perilaku dropdown ketika tombol dropdown ditekan
       dropdownButton.addEventListener('click', function() {
-        // Toggle kelas 'hidden' pada dropdown menu
         dropdownMenu.classList.toggle('hidden');
       });
     
-      // Tambahan: menutup dropdown ketika klik di luar dropdown
       document.addEventListener('click', function(event) {
         const isClickInsideDropdown = dropdownButton.contains(event.target) || dropdownMenu.contains(event.target);
         if (!isClickInsideDropdown) {
           dropdownMenu.classList.add('hidden');
         }
       });
+
+      // navbar 1
+      document.getElementById('hamburger-button').addEventListener('click', function() {
+        const menu = document.getElementById('mobile-menu');
+        menu.classList.toggle('hidden');
+      });
+
     </script>
     
 </body>
