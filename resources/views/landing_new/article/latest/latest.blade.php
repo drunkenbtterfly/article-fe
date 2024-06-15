@@ -18,12 +18,12 @@
 </head>
 <body>
 <header>
-  <nav class="bg-white p-4 mx-2 my-4">
+  <nav class="bg-white p-4 mx-2 md:mx-20 my-4">
         <div class="flex items-center justify-between">
-            <!-- Logo di bagian kiri -->
+            <!-- logo youtz -->
             <div class="font-bold text-lg flex items-center">
                 <a href="#">
-                    <img src="https://i.ibb.co/kBVssdS/youtzmedia-1-removebg-preview.png" alt="Logo" class="h-[80px]">
+                    <img src="{{ asset('images/youtz.png') }}" alt="Logo" class="h-[80px]">
                 </a>
             </div>
         
@@ -52,11 +52,11 @@
         </div>
         
         <!-- Menu untuk mobile -->
-        <div id="mobile-menu" class="menu md:hidden">
-            <a href="#" class="block text-2xl font-bold py-2">Home</a>
-            <a href="#" class="block text-2xl font-bold py-2">Incubator</a>
-            <a href="#" class="block text-2xl font-bold py-2">FAQ</a>
-            <a href="#" class="block text-2xl font-bold py-2">Contact</a>
+        <div id="mobile-menu" class="menu md:hidden mt-5">
+            <a href="/latest" class="block text-2xl font-bold py-2 hover:underline">Home</a>
+            <a href="/incubator" class="block text-2xl font-bold py-2 hover:underline">Incubator</a>
+            <a href="/faq" class="block text-2xl font-bold py-2 hover:underline">FAQ</a>
+            <a href="#" class="block text-2xl font-bold py-2 hover:underline">Contact</a>
         </div>
     </nav>
     <hr class="border-black">
@@ -101,7 +101,7 @@
   <!-- 1 -->
   <div class="flex flex-col sm:flex-row">
 
-    <div class="w-full sm:w-2/3 p-20">
+    <div class="w-full sm:w-2/3 p-10 md:p-20">
       <div class="relative bg-black h-[348px] rounded-xl overflow-hidden transition-transform duration-300 transform hover:scale-105">
         <img src="{{ asset('images/latest1.png') }}" alt="" class="h-full w-full object-cover">
         <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
@@ -343,7 +343,7 @@
 
 </div>
 
-  <div class="mt-4 grid md:gird-cols-1 lg:grid-cols-3 gap-20 p-20">
+  <div class="mt-4 grid md:gird-cols-1 lg:grid-cols-3 gap-20 p-10 md:p-20">
     <div class="">
       <div class="flex mb-5">
         <div class="bg-[#00A9FF] h-10 w-5"></div>
@@ -515,7 +515,7 @@
       <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8 dark:border-gray-700 hidden lg:block" />
       <div class="mt-1 grid grid-cols-3 gap-20 sm:grid-cols-3 sm:gap-60">
         <div class="flex flex-col items-center sm:items-start sm:flex-row">
-          <img src="https://i.ibb.co/kBVssdS/youtzmedia-1-removebg-preview.png" alt="" class="h-24 w-24">
+          <img src="{{ asset('images/youtz.png') }}" alt="" class="h-24 w-24">
         <span class="mt-2 ml-1 text-sm text-black sm:text-start text-center">Hak Cipta © 2024 <a href="https://flowbite.com/" class="hover:underline">Youtz Media</a>All Rights Reserved. </span>
         </div>
         <div class="">
@@ -572,10 +572,10 @@
   </footer>
 
   <script>
-        document.getElementById('hamburger').addEventListener('click', function() {
-            document.getElementById('mobile-menu').classList.toggle('active');
-        });
-    </script>
+    document.getElementById('hamburger').addEventListener('click', function() {
+    document.getElementById('mobile-menu').classList.toggle('active');
+    });
+  </script>
 
 </body>
 </html>

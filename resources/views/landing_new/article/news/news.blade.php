@@ -30,19 +30,19 @@ $articles = [
 ?>
 
 <!-- Navbar 1 -->
-<nav class="bg-white p-4 text-black mx-[20px]">
-  <div class="p-4 flex justify-between items-center">
+<nav class="bg-white p-4 text-black mx-2 md:mx-20 my-4">
+  <div class="flex justify-between items-center">
     <div class="flex items-end space-x-4 hidden md:flex">
-      <img src="https://i.ibb.co/9vryN6W/Screenshot-2024-03-09-125459.png" alt="Icon 1" class="h-6 w-6 rounded-[30px]" />
-      <img src="https://i.ibb.co/FVMXs8K/Screenshot-2024-03-09-125604.png" alt="Icon 2" class="h-6 w-6 rounded-[30px]" />
-      <img src="https://i.ibb.co/bbV3cfD/Screenshot-2024-03-09-125719.png" alt="Icon 3" class="h-6 w-6 rounded-[30px]" />
-      <img src="https://i.ibb.co/C9xCXkn/Screenshot-2024-03-09-125739.png" alt="Icon 4" class="h-6 w-6 rounded-[30px]" />
-      <img src="https://i.ibb.co/SXSX8QG/Screenshot-2024-03-09-125840.png" alt="Icon 5" class="h-6 w-6 rounded-[30px]" />
+      <a href="https://www.instagram.com/mhdirfaan__/"><img src="{{ asset('images/ig.png') }}" alt="Icon 1" class="h-6 w-6 rounded-[30px]" /></a>
+      <a href="#"><img src="{{ asset('images/tele.png') }}" alt="Icon 2" class="h-6 w-6 rounded-[30px]" /></a>
+      <a href="#"><img src="{{ asset('images/yt.png') }}" alt="Icon 3" class="h-6 w-6 rounded-[30px]" /></a>
+      <a href="#"><img src="{{ asset('images/tt.png') }}" alt="Icon 4" class="h-6 w-6 rounded-[30px]" /></a>
+      <a href="#"><img src="{{ asset('images/wa.png') }}" alt="Icon 5" class="h-6 w-6 rounded-[30px]" /></a>
     </div>
 
     <!-- Logo -->
     <div class="flex-shrink-0">
-      <img src="https://i.ibb.co/kBVssdS/youtzmedia-1-removebg-preview.png" alt="Logo" class="h-20 w-20" />
+      <img src="{{ asset('images/youtz.png') }}" alt="Logo" class="h-[80px]">
     </div>
 
     <!-- Search -->
@@ -57,9 +57,9 @@ $articles = [
 
     <!-- Hamburger Menu -->
     <div class="md:hidden">
-      <button id="hamburger-button" class="focus:outline-none">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+      <button id="hamburger-button" class="text-black focus:outline-none">
+        <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
         </svg>
       </button>
     </div>
@@ -69,12 +69,12 @@ $articles = [
   <div id="mobile-menu" class="md:hidden hidden">
     <div class="p-4">
       <!-- Mobile Icons -->
-      <div class="flex items-end space-x-4 mb-4">
-        <img src="https://i.ibb.co/9vryN6W/Screenshot-2024-03-09-125459.png" alt="Icon 1" class="h-6 w-6 rounded-[30px]" />
-        <img src="https://i.ibb.co/FVMXs8K/Screenshot-2024-03-09-125604.png" alt="Icon 2" class="h-6 w-6 rounded-[30px]" />
-        <img src="https://i.ibb.co/bbV3cfD/Screenshot-2024-03-09-125719.png" alt="Icon 3" class="h-6 w-6 rounded-[30px]" />
-        <img src="https://i.ibb.co/C9xCXkn/Screenshot-2024-03-09-125739.png" alt="Icon 4" class="h-6 w-6 rounded-[30px]" />
-        <img src="https://i.ibb.co/SXSX8QG/Screenshot-2024-03-09-125840.png" alt="Icon 5" class="h-6 w-6 rounded-[30px]" />
+      <div class="flex justify-center items-center space-x-4 mb-4">
+        <a href="https://www.instagram.com/mhdirfaan__/"><img src="{{ asset('images/ig.png') }}" alt="Icon 1" class="h-6 w-6 rounded-[30px]" /></a>
+        <a href="#"><img src="{{ asset('images/tele.png') }}" alt="Icon 2" class="h-6 w-6 rounded-[30px]" /></a>
+        <a href="#"><img src="{{ asset('images/yt.png') }}" alt="Icon 3" class="h-6 w-6 rounded-[30px]" /></a>
+        <a href="#"><img src="{{ asset('images/tt.png') }}" alt="Icon 4" class="h-6 w-6 rounded-[30px]" /></a>
+        <a href="#"><img src="{{ asset('images/wa.png') }}" alt="Icon 5" class="h-6 w-6 rounded-[30px]" /></a>
       </div>
       <!-- Mobile Search -->
       <div class="flex items-center relative">
@@ -89,8 +89,8 @@ $articles = [
   </div>
 </nav>
   <nav class="p-2 bg-[#00A9FF]">
-    <div class="flex justify-between items-center">
-      <ul class="flex space-x-[40px] lg:space-x-[69px] text-2xl text-white font-bold overflow-x-auto mx-20">
+    <div class="flex justify-center items-center">
+      <ul class="flex space-x-[70px] text-2xl text-white font-bold overflow-x-auto overflow-y-hidden">
         <li class="hover:text-blue-600"><a href="/latest">Latest</a></li>
         <li class="text-blue-600 hover:text-blue-600"><a href="/news">News</a></li>
         <li class="hover:text-blue-600"><a href="/entertaiment">Entertainment</a></li>
@@ -326,7 +326,7 @@ $articles = [
       <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8 dark:border-gray-700" />
       <div class="mt-1 grid grid-cols-3 gap-20 sm:grid-cols-3 sm:gap-60">
         <div>
-          <img src="https://i.ibb.co/kBVssdS/youtzmedia-1-removebg-preview.png" alt="" class="h-24 w-24">
+          <img src="{{ asset('images/youtz.png') }}" alt="" class="h-24 w-24">
         <span class="mt-2 ml-1 text-sm text-black sm:text-start text-center">Hak Cipta © 2024 <a href="https://flowbite.com/" class="hover:underline">Youtz Media</a>All Rights Reserved. </span>
         </div>
         <div>
