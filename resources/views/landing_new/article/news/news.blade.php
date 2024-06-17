@@ -27,6 +27,32 @@ $articles = [
         "desc" => "Ngeri! Resesi Amerika Bakal Terjadi Mulai Kuartal I/2024"
     ]
 ];
+$articles2 = [
+  [
+      "img" => "images/latest1.png",
+      "title" => "Mendalaminya bagaimana komputer kuantum akan mengubah paradigma komputasi saat ini.",
+      "category" => "Food",
+      "date" => "Senin 15 November 2023"
+  ],
+  [
+      "img" => "images/latest1.png",
+      "title" => "Mendalaminya bagaimana komputer kuantum akan mengubah paradigma komputasi saat ini.",
+      "category" => "Food",
+      "date" => "Senin 15 November 2023"
+  ],
+  [
+      "img" => "images/latest1.png",
+      "title" => "Mendalaminya bagaimana komputer kuantum akan mengubah paradigma komputasi saat ini.",
+      "category" => "Food",
+      "date" => "Senin 15 November 2023"
+  ],
+  [
+      "img" => "images/latest1.png",
+      "title" => "Mendalaminya bagaimana komputer kuantum akan mengubah paradigma komputasi saat ini.",
+      "category" => "Food",
+      "date" => "Senin 15 November 2023"
+  ]
+];
 ?>
 
 <!-- Navbar 1 -->
@@ -126,7 +152,7 @@ $articles = [
     </div>
   </nav>
 
-  <div class="container mx-auto flex flex-col lg:flex-row p-20 gap-20">
+  <div class="container mx-auto flex flex-col lg:flex-row p-6 md:p-20 gap-20">
 
     <!-- Bagian Kiri (Text) -->
     <div class="lg:w-2/3 lg:order-first mb-10 lg:mb-0 flex flex-col justify-center">
@@ -180,12 +206,21 @@ $articles = [
     <div class="lg:w-1/3">
         <div class="bg-[#EDEDED] h-auto shadow-xl border-2 border-gray-200 rounded-[20px]">
           <div class="bg-[#00A9FF] flex justify-center items-center text-white font-bold text-2xl h-20 rounded-t-[20px] p-2">Terpopuler</div>
-          <div class="grid grid-rows-5 grid-flow-col gap-4">
-            <div class="flex justify-start items-start font-semibold p-5 mt-2"><span class="font-bold text-3xl mr-5">#1</span>Pertumbuhan Ekonomi Amerika Melesat 6,9% pada 2021 Meski ada Omicron</div>
-            <div class="flex justify-start items-start font-semibold p-5"><span class="font-bold text-3xl mr-5">#2</span>Pertumbuhan Ekonomi Amerika Melesat 6,9% pada 2021 Meski ada Omicron</div>
-            <div class="flex justify-start items-start font-semibold p-5"><span class="font-bold text-3xl mr-5">#3</span>Pertumbuhan Ekonomi Amerika Melesat 6,9% pada 2021 Meski ada Omicron</div>
-            <div class="flex justify-start items-start font-semibold p-5"><span class="font-bold text-3xl mr-5">#4</span>Pertumbuhan Ekonomi Amerika Melesat 6,9% pada 2021 Meski ada Omicron</div>
-            <div class="flex justify-center items-center text-xl text-[#00A9FF] font-bold">Terpopuler lainnya</div>
+            <div class="m-2 md:hidden block">
+              <div class="h-40 bg-gray-300 flex justify-center items-center">
+                <h1 class="text-4xl font-semibold">Ads/iklan</h1>
+              </div>
+            </div>
+          <div class="grid md:grid-rows-5 grid-rows-8 gap-4">
+            <a href="#"><div class="flex justify-start items-start font-semibold p-5 mt-2 hover:underline"><span class="font-bold text-3xl mr-5">#1</span>Pertumbuhan Ekonomi Amerika Melesat 6,9% pada 2021 Meski ada Omicron</div></a>
+            <a href="#"><div class="flex justify-start items-start font-semibold p-5 hover:underline"><span class="font-bold text-3xl mr-5">#2</span>Pertumbuhan Ekonomi Amerika Melesat 6,9% pada 2021 Meski ada Omicron</div></a>
+            <a href="#"><div class="flex justify-start items-start font-semibold p-5 hover:underline"><span class="font-bold text-3xl mr-5">#3</span>Pertumbuhan Ekonomi Amerika Melesat 6,9% pada 2021 Meski ada Omicron</div></a>
+            <a href="#"><div class="flex justify-start items-start font-semibold p-5 hover:underline"><span class="font-bold text-3xl mr-5">#4</span>Pertumbuhan Ekonomi Amerika Melesat 6,9% pada 2021 Meski ada Omicron</div></a>
+            <div class="md:hidden block"><a href="#"><div class="flex justify-start items-start font-semibold p-5 hover:underline"><span class="font-bold text-3xl mr-5">#5</span>Pertumbuhan Ekonomi Amerika Melesat 6,9% pada 2021 Meski ada Omicron</div></a></div>
+            <div class="md:hidden block"><a href="#"><div class="flex justify-start items-start font-semibold p-5 hover:underline"><span class="font-bold text-3xl mr-5">#6</span>Pertumbuhan Ekonomi Amerika Melesat 6,9% pada 2021 Meski ada Omicron</div></a></div>
+            <div class="md:hidden block"><a href="#"><div class="flex justify-start items-start font-semibold p-5 hover:underline"><span class="font-bold text-3xl mr-5">#7</span>Pertumbuhan Ekonomi Amerika Melesat 6,9% pada 2021 Meski ada Omicron</div></a></div>
+            <div class="md:hidden block"><a href="#"><div class="flex justify-start items-start font-semibold p-5 hover:underline"><span class="font-bold text-3xl mr-5">#8</span>Pertumbuhan Ekonomi Amerika Melesat 6,9% pada 2021 Meski ada Omicron</div></a></div>
+            <a href="#"><div class="flex justify-center items-center text-xl text-[#00A9FF] font-bold hover:underline mb-10 md:mb-0">Terpopuler lainnya < </div></a>
           </div>
         </div>
       </div> 
@@ -228,42 +263,13 @@ $articles = [
         <hr class="border-black">
         <div class="bg-white px-4 py-10">
             <div class="flex flex-col gap-10">
-                <?php
-                $articles = [
-                    [
-                        "img" => "images/latest1.png",
-                        "title" => "Mendalaminya bagaimana komputer kuantum akan mengubah paradigma komputasi saat ini.",
-                        "category" => "Food",
-                        "date" => "Senin 15 November 2023"
-                    ],
-                    [
-                        "img" => "images/latest1.png",
-                        "title" => "Mendalaminya bagaimana komputer kuantum akan mengubah paradigma komputasi saat ini.",
-                        "category" => "Food",
-                        "date" => "Senin 15 November 2023"
-                    ],
-                    [
-                        "img" => "images/latest1.png",
-                        "title" => "Mendalaminya bagaimana komputer kuantum akan mengubah paradigma komputasi saat ini.",
-                        "category" => "Food",
-                        "date" => "Senin 15 November 2023"
-                    ],
-                    [
-                        "img" => "images/latest1.png",
-                        "title" => "Mendalaminya bagaimana komputer kuantum akan mengubah paradigma komputasi saat ini.",
-                        "category" => "Food",
-                        "date" => "Senin 15 November 2023"
-                    ]
-                ];
-                ?>
-
-                <?php foreach ($articles as $article): ?>
+                <?php foreach ($articles2 as $article2): ?>
                     <div class="flex items-start">
-                        <img src="<?php echo asset($article['img']); ?>" alt="Deskripsi Gambar" class="rounded-xl h-24 w-24 md:h-auto md:w-auto">
+                        <img src="<?php echo asset($article2['img']); ?>" alt="Deskripsi Gambar" class="rounded-xl h-24 w-24 md:h-auto md:w-auto">
                         <div class="flex flex-col p-2 justify-center items-start py-5">
-                            <p class="font-bold"><?php echo $article['title']; ?></p>
-                            <span class="mt-2 mb-2 font-bold text-orange-300"><?php echo $article['category']; ?></span>
-                            <span class="text-sm"><?php echo $article['date']; ?></span>
+                            <p class="font-bold"><?php echo $article2['title']; ?></p>
+                            <span class="mt-2 mb-2 font-bold text-orange-300"><?php echo $article2['category']; ?></span>
+                            <span class="text-sm"><?php echo $article2['date']; ?></span>
                         </div>
                     </div>
                 <?php endforeach; ?>
@@ -291,95 +297,70 @@ $articles = [
 
   <footer class="mt-20 bg-gradient-to-br from-slate-50 to-[#00A9FF]">
     <div class="mx-auto w-full max-w-screen-xl p-2 py-6 lg:py-8">
-      <div class="md:flex md:justify-between ml-[55px]">
-        <div class="mt-1 grid grid-cols-4 gap-20 sm:grid-cols-4 sm:gap-60">
-          <div>
-            <ul class="font-bold text-black">
-              <p>Entertaiment</p>
-              <p>Food</p>
-              <p>Inpirational</p>
-            </ul>
-          </div>
-          <div>
-            <ul class="font-medium text-black">
-              <p>Entertaiment</p>
-              <p>Food</p>
-              <p>Inpirational</p>
-            </ul>
-          </div>
-          <div>
-            <ul class="font-medium text-black">
-              <p>Entertaiment</p>
-              <p>Food</p>
-              <p>Inpirational</p>
-            </ul>
-          </div>
-          <div>
-            <ul class="font-medium text-black">
-              <p>Entertaiment</p>
-              <p>Food</p>
-              <p>Inpirational</p>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8 dark:border-gray-700" />
-      <div class="mt-1 grid grid-cols-3 gap-20 sm:grid-cols-3 sm:gap-60">
-        <div>
-          <img src="{{ asset('images/youtz.png') }}" alt="" class="h-24 w-24">
-        <span class="mt-2 ml-1 text-sm text-black sm:text-start text-center">Hak Cipta © 2024 <a href="https://flowbite.com/" class="hover:underline">Youtz Media</a>All Rights Reserved. </span>
-        </div>
-        <div>
-          <ul class="text-black">
-            <p class="font-bold">Entertaiment</p>
-            <p>FAQ</p>
-            <p>Kontak</p>
-            <p>Connect With Us</p>
-            <div class="mt-5 flex sm:mt-0">
-              <a href="#" class="ms-5 text-gray-500 hover:text-gray-900 dark:hover:text-white">
-                <svg class="h-6 w-6 text-gray-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                  <polyline points="22,6 12,13 2,6" />
-                </svg>
-                <span class="sr-only">Email page</span>
-              </a>
-              <a href="#" class="ms-5 text-gray-500 hover:text-gray-900 dark:hover:text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-                </svg>
-                <span class="sr-only">Instagram page</span>
-              </a>
-              <a href="#" class="ms-5 text-gray-500 hover:text-gray-900 dark:hover:text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
-                </svg>
-                <span class="sr-only">Youtube account</span>
-              </a>
-              <a href="#" class="ms-5 text-gray-500 hover:text-gray-900 dark:hover:text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
-                </svg>
-                <span class="sr-only">LinkedIn account</span>
-              </a>
-      
-              <a href="#" class="ms-5 text-gray-500 hover:text-gray-900 dark:hover:text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="h-5 w-5">
-                  <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                  <path fill="currentColor" d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
-                </svg>
-                <span class="sr-only">Tiktok account</span>
-              </a>
+        <div class="md:flex md:justify-between ml-[55px]">
+            <div class="grid grid-cols-1 md:grid-cols-4 md:gap-20 sm:grid-cols-2 sm:gap-10 hidden md:block">
+                <div class="mb-6 md:mb-0">
+                    <ul class="font-bold text-black">
+                        <li>Entertainment</li>
+                        <li>Food</li>
+                        <li>Inspirational</li>
+                    </ul>
+                </div>
+                <div class="mb-6 md:mb-0">
+                    <ul class="font-medium text-black">
+                        <li>Entertainment</li>
+                        <li>Food</li>
+                        <li>Inspirational</li>
+                    </ul>
+                </div>
+                <div class="mb-6 md:mb-0">
+                    <ul class="font-medium text-black">
+                        <li>Entertainment</li>
+                        <li>Food</li>
+                        <li>Inspirational</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="font-medium text-black">
+                        <li>Entertainment</li>
+                        <li>Food</li>
+                        <li>Inspirational</li>
+                    </ul>
+                </div>
             </div>
-          </ul>
         </div>
-        <div>
-          <ul class="text-black">
-            <p class="font-bold">Location</p>
-            <p>Jl. Lengkong Gudang Timur Raya No.79 A, Lengkong Gudang Timur, Kec. Serpong, Kota Tangerang Selatan, Banten 15310</p>
-          </ul>
+        <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8 dark:border-gray-700 hidden md:block" />
+        <div class="grid grid-cols-1 gap-6 sm:grid-cols-3 sm:gap-10">
+            <div>
+                <img src="{{ asset('images/youtz.png') }}" alt="" class="h-24 w-24 mx-auto sm:mx-0">
+                <span class="block mt-2 text-sm text-center text-black sm:text-left">Hak Cipta © 2024 <a href="https://flowbite.com/" class="hover:underline">Youtz Media</a> All Rights Reserved.</span>
+            </div>
+            <div class="text-black">
+                <p class="font-bold">Entertainment</p>
+                <ul>
+                    <li>FAQ</li>
+                    <li>Kontak</li>
+                    <li>Connect With Us</li>
+                </ul>
+                <div class="mt-5 flex justify-center sm:justify-start">
+                    <a href="#" class="ml-5 text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                        <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
+                        </svg>
+                        <span class="sr-only">Email page</span>
+                    </a>
+                    <!-- Add other social media icons here -->
+                </div>
+            </div>
+            <div class="text-black">
+                <p class="font-bold">Location</p>
+                <p>Jl. Lengkong Gudang Timur Raya No.79 A, Lengkong Gudang Timur, Kec. Serpong, Kota Tangerang Selatan, Banten 15310</p>
+            </div>
         </div>
-      </div>
     </div>
+</footer>
+
   
     <script>
       // dropdown menu

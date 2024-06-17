@@ -23,7 +23,7 @@
             <!-- logo youtz -->
             <div class="font-bold text-lg flex items-center">
                 <a href="#">
-                    <img src="{{ asset('images/youtz.png') }}" alt="Logo" class="h-[80px]">
+                    <img src="{{ asset('images/youtzmedia.png') }}" alt="Logo" class="h-[80px]">
                 </a>
             </div>
         
@@ -62,7 +62,7 @@
     <hr class="border-black">
     <nav class="p-2">
       <div class="flex justify-center items-center">
-        <ul class="flex space-x-[70px] text-2xl font-bold overflow-x-auto overflow-y-hidden">
+        <ul class="flex space-x-[30px] ml-2 md:ml-0 md:space-x-[70px] text-xl md:text-2xl font-bold overflow-x-auto overflow-y-hidden">
           <li class="text-blue-600 hover:text-blue-600"><a href="/latest">Latest</a></li>
           <li class="hover:text-blue-600"><a href="/news">News</a></li>
           <li class="hover:text-blue-600"><a href="/entertaiment">Entertaiment</a></li>
@@ -478,7 +478,7 @@
     </div>
   </div>
 
-  <footer class="mt-20 bg-gradient-to-br from-[#0AB9FF] to-[#C466E1]">
+  <footer class="mt-20 bg-gradient-to-tr from-[#9B4BB7] to-[#3E87C3] text-white font-montserrat">
     <div class="mx-auto w-full max-w-screen-xl p-2 py-6 lg:py-8">
       <div class="md:flex md:justify-between ml-[55px]">
         <div class="mt-1 grid grid-cols-4 gap-20 sm:grid-cols-4 sm:gap-60">
@@ -515,7 +515,7 @@
       <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8 dark:border-gray-700 hidden lg:block" />
       <div class="mt-1 grid grid-cols-3 gap-20 sm:grid-cols-3 sm:gap-60">
         <div class="flex flex-col items-center sm:items-start sm:flex-row">
-          <img src="{{ asset('images/youtz.png') }}" alt="" class="h-24 w-24">
+          <img src="{{ asset('images/youtzmedia.png') }}" alt="" class="h-24 w-24">
         <span class="mt-2 ml-1 text-sm text-black sm:text-start text-center">Hak Cipta © 2024 <a href="https://flowbite.com/" class="hover:underline">Youtz Media</a>All Rights Reserved. </span>
         </div>
         <div class="">
