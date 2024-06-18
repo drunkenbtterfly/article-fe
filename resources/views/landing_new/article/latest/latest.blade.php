@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="{{ asset('images/youtz.png') }}">
   <title>Youtz Media</title>
   <style src="../output.css"></style>
   <style>
@@ -316,7 +317,8 @@
             <span class="text-sm">Senin 15 November 2023</span>
           </div>
         </div>
-        <div class="flex{{ asset('images/latest1.png') }}" alt="" class="rounded-xl h-24 w-24 md:h-auto md:w-auto">
+        <div class="flex items-start">
+          <img src="{{ asset('images/latest1.png') }}" alt="" class="rounded-xl h-24 w-24 md:h-auto md:w-auto">
           <div class="flex flex-col p-2">
             <p class="font-semibold">Mendalaminya bagaimana komputer kuantum akan mengubah paradigma komputasi saat ini.</p>
             <span class="mt-2 mb-2 font-bold text-orange-300">Food</span>
@@ -348,20 +350,20 @@
         <div class="bg-[#00A9FF] h-10 w-5"></div>
         <h1 class="text-4xl font-semibold ml-3">Entertainment</h1>
       </div>
-      <div class="relative h-[270px] transition-transform duration-300 transform hover:scale-105">
+      <a href="/entertaiment"><div class="relative h-[270px] transition-transform duration-300 transform hover:scale-105">
         <img src="{{ asset('images/entertaiment.png') }}" alt="Deskripsi gambar" class="h-full w-full rounded-xl" />
         <div class="absolute inset-0 flex items-end justify-start">
           <div class="w-full bg-gradient-to-b from-transparent to-[#4F4D4D] text-white p-4 rounded-b-xl">
             <p class="text-lg font-semibold">Lorem ipsum dolor sit amet</p>
           </div>
         </div>
-      </div>
+      </div></a>
       <div class="md:hidden block my-5">
     <div class="grid grid-rows-5 gap-4">
       <a href="#"><div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
         <img src="{{ asset('images/latest1.png') }}" alt="News 1" class="h-full w-2/5 object-cover rounded-xl" />
         <div class="p-3">
-          <p class="text-sm font-semibold text-blue-800">Economics</p>
+          <p class="text-sm font-semibold text-blue-800">Entertaiment</p>
           <p class="text-xs text-black">kamis 2 Juni 2023</p>
           <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin black.</p>
         </div>
@@ -369,7 +371,7 @@
       <a href="#"><div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
         <img src="{{ asset('images/latest1.png') }}" alt="News 1" class="h-full w-2/5 object-cover rounded-xl" />
         <div class="p-3">
-          <p class="text-sm font-semibold text-blue-800">Economics</p>
+          <p class="text-sm font-semibold text-blue-800">Entertaiment</p>
           <p class="text-xs text-black">kamis 2 Juni 2023</p>
           <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin black.</p>
         </div>
@@ -377,7 +379,7 @@
       <a href="#"><div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
         <img src="{{ asset('images/latest1.png') }}" alt="News 1" class="h-full w-2/5 object-cover rounded-xl" />
         <div class="p-3">
-          <p class="text-sm font-semibold text-blue-800">Economics</p>
+          <p class="text-sm font-semibold text-blue-800">Entertaiment</p>
           <p class="text-xs text-black">kamis 2 Juni 2023</p>
           <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin black.</p>
         </div>
@@ -385,7 +387,7 @@
       <a href="#"><div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
         <img src="{{ asset('images/latest1.png') }}" alt="News 1" class="h-full w-2/5 object-cover rounded-xl" />
         <div class="p-3">
-          <p class="text-sm font-semibold text-blue-800">Economics</p>
+          <p class="text-sm font-semibold text-blue-800">Entertaiment</p>
           <p class="text-xs text-black">kamis 2 Juni 2023</p>
           <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin black.</p>
         </div>
@@ -393,7 +395,7 @@
       <a href="#"><div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
         <img src="{{ asset('images/latest1.png') }}" alt="News 1" class="h-full w-2/5 object-cover rounded-xl" />
         <div class="p-3">
-          <p class="text-sm font-semibold text-blue-800">Economics</p>
+          <p class="text-sm font-semibold text-blue-800">Entertaiment</p>
           <p class="text-xs text-black">kamis 2 Juni 2023</p>
           <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin black.</p>
         </div>
@@ -401,117 +403,479 @@
       <a href=""><span class="flex text-blue-600 font-bold justify-center items-center m-2 hover:underline">Artikel Lainnya ></span></a>
     </div>
     </div>
-    </div>    
-    <div class="">
+    </div>
+    <div class="container">
       <div class="flex mb-5">
-        <div class="bg-[#5375F0] h-10 w-5"></div>
+        <div class="bg-[#00A9FF] h-10 w-5"></div>
         <h1 class="text-4xl font-semibold ml-3">Health</h1>
       </div>
-      <div class="relative h-[270px]">
+      <a href="/entertaiment"><div class="relative h-[270px] transition-transform duration-300 transform hover:scale-105">
         <img src="{{ asset('images/health.png') }}" alt="Deskripsi gambar" class="h-full w-full rounded-xl" />
         <div class="absolute inset-0 flex items-end justify-start">
           <div class="w-full bg-gradient-to-b from-transparent to-[#4F4D4D] text-white p-4 rounded-b-xl">
             <p class="text-lg font-semibold">Lorem ipsum dolor sit amet</p>
           </div>
-          </div>
-      </div>
-    </div> 
-    <div class="">
+        </div>
+      </div></a>
+      <div class="md:hidden block my-5">
+    <div class="grid grid-rows-5 gap-4">
+      <a href="#"><div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
+        <img src="{{ asset('images/health.png') }}" alt="News 1" class="h-full w-2/5 object-cover rounded-xl" />
+        <div class="p-3">
+          <p class="text-sm font-semibold text-blue-800">Health</p>
+          <p class="text-xs text-black">kamis 2 Juni 2023</p>
+          <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin black.</p>
+        </div>
+      </div></a>
+      <a href="#"><div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
+        <img src="{{ asset('images/health.png') }}" alt="News 1" class="h-full w-2/5 object-cover rounded-xl" />
+        <div class="p-3">
+          <p class="text-sm font-semibold text-blue-800">Health</p>
+          <p class="text-xs text-black">kamis 2 Juni 2023</p>
+          <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin black.</p>
+        </div>
+      </div></a>
+      <a href="#"><div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
+        <img src="{{ asset('images/health.png') }}" alt="News 1" class="h-full w-2/5 object-cover rounded-xl" />
+        <div class="p-3">
+          <p class="text-sm font-semibold text-blue-800">Health</p>
+          <p class="text-xs text-black">kamis 2 Juni 2023</p>
+          <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin black.</p>
+        </div>
+      </div></a>
+      <a href="#"><div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
+        <img src="{{ asset('images/health.png') }}" alt="News 1" class="h-full w-2/5 object-cover rounded-xl" />
+        <div class="p-3">
+          <p class="text-sm font-semibold text-blue-800">Health</p>
+          <p class="text-xs text-black">kamis 2 Juni 2023</p>
+          <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin black.</p>
+        </div>
+      </div></a>
+      <a href="#"><div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
+        <img src="{{ asset('images/health.png') }}" alt="News 1" class="h-full w-2/5 object-cover rounded-xl" />
+        <div class="p-3">
+          <p class="text-sm font-semibold text-blue-800">Health</p>
+          <p class="text-xs text-black">kamis 2 Juni 2023</p>
+          <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin black.</p>
+        </div>
+      </div></a>
+      <a href=""><span class="flex text-blue-600 font-bold justify-center items-center m-2 hover:underline">Artikel Lainnya ></span></a>
+    </div>
+    </div>
+    </div>  
+    <div class="container">
       <div class="flex mb-5">
         <div class="bg-[#F3B95F] h-10 w-5"></div>
         <h1 class="text-4xl font-semibold ml-3">Food</h1>
       </div>
-      <div class="relative h-[270px]">
+      <a href="/entertaiment"><div class="relative h-[270px] transition-transform duration-300 transform hover:scale-105">
         <img src="{{ asset('images/food.png') }}" alt="Deskripsi gambar" class="h-full w-full rounded-xl" />
         <div class="absolute inset-0 flex items-end justify-start">
           <div class="w-full bg-gradient-to-b from-transparent to-[#4F4D4D] text-white p-4 rounded-b-xl">
             <p class="text-lg font-semibold">Lorem ipsum dolor sit amet</p>
           </div>
         </div>
-      </div>
-    </div> 
-    <div class="">
+      </div></a>
+      <div class="md:hidden block my-5">
+    <div class="grid grid-rows-5 gap-4">
+      <a href="#"><div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
+        <img src="{{ asset('images/food.png') }}" alt="News 1" class="h-full w-2/5 object-cover rounded-xl" />
+        <div class="p-3">
+          <p class="text-sm font-semibold text-[#F3B95F]">Food</p>
+          <p class="text-xs text-black">kamis 2 Juni 2023</p>
+          <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin black.</p>
+        </div>
+      </div></a>
+      <a href="#"><div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
+        <img src="{{ asset('images/food.png') }}" alt="News 1" class="h-full w-2/5 object-cover rounded-xl" />
+        <div class="p-3">
+          <p class="text-sm font-semibold text-[#F3B95F]">Food</p>
+          <p class="text-xs text-black">kamis 2 Juni 2023</p>
+          <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin black.</p>
+        </div>
+      </div></a>
+      <a href="#"><div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
+        <img src="{{ asset('images/food.png') }}" alt="News 1" class="h-full w-2/5 object-cover rounded-xl" />
+        <div class="p-3">
+          <p class="text-sm font-semibold text-[#F3B95F]">Food</p>
+          <p class="text-xs text-black">kamis 2 Juni 2023</p>
+          <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin black.</p>
+        </div>
+      </div></a>
+      <a href="#"><div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
+        <img src="{{ asset('images/food.png') }}" alt="News 1" class="h-full w-2/5 object-cover rounded-xl" />
+        <div class="p-3">
+          <p class="text-sm font-semibold text-[#F3B95F]">Food</p>
+          <p class="text-xs text-black">kamis 2 Juni 2023</p>
+          <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin black.</p>
+        </div>
+      </div></a>
+      <a href="#"><div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
+        <img src="{{ asset('images/food.png') }}" alt="News 1" class="h-full w-2/5 object-cover rounded-xl" />
+        <div class="p-3">
+          <p class="text-sm font-semibold text-[#F3B95F]">Food</p>
+          <p class="text-xs text-black">kamis 2 Juni 2023</p>
+          <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin black.</p>
+        </div>
+      </div></a>
+      <a href=""><span class="flex text-blue-600 font-bold justify-center items-center m-2 hover:underline">Artikel Lainnya ></span></a>
+    </div>
+    </div>
+    </div>  
+    <div class="container">
       <div class="flex mb-5">
-        <div class="bg-[#CC7EE4] h-10 w-5"></div>
+        <div class="bg-[#00A9FF] h-10 w-5"></div>
         <h1 class="text-4xl font-semibold ml-3">News</h1>
       </div>
-      <div class="relative h-[270px]">
+      <a href="/entertaiment"><div class="relative h-[270px] transition-transform duration-300 transform hover:scale-105">
         <img src="{{ asset('images/news.png') }}" alt="Deskripsi gambar" class="h-full w-full rounded-xl" />
         <div class="absolute inset-0 flex items-end justify-start">
           <div class="w-full bg-gradient-to-b from-transparent to-[#4F4D4D] text-white p-4 rounded-b-xl">
             <p class="text-lg font-semibold">Lorem ipsum dolor sit amet</p>
           </div>
         </div>
-      </div>
-    </div> 
-    <div class="">
+      </div></a>
+      <div class="md:hidden block my-5">
+    <div class="grid grid-rows-5 gap-4">
+      <a href="#"><div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
+        <img src="{{ asset('images/news.png') }}" alt="News 1" class="h-full w-2/5 object-cover rounded-xl" />
+        <div class="p-3">
+          <p class="text-sm font-semibold text-blue-800">News</p>
+          <p class="text-xs text-black">kamis 2 Juni 2023</p>
+          <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin black.</p>
+        </div>
+      </div></a>
+      <a href="#"><div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
+        <img src="{{ asset('images/news.png') }}" alt="News 1" class="h-full w-2/5 object-cover rounded-xl" />
+        <div class="p-3">
+          <p class="text-sm font-semibold text-blue-800">News</p>
+          <p class="text-xs text-black">kamis 2 Juni 2023</p>
+          <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin black.</p>
+        </div>
+      </div></a>
+      <a href="#"><div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
+        <img src="{{ asset('images/news.png') }}" alt="News 1" class="h-full w-2/5 object-cover rounded-xl" />
+        <div class="p-3">
+          <p class="text-sm font-semibold text-blue-800">News</p>
+          <p class="text-xs text-black">kamis 2 Juni 2023</p>
+          <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin black.</p>
+        </div>
+      </div></a>
+      <a href="#"><div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
+        <img src="{{ asset('images/news.png') }}" alt="News 1" class="h-full w-2/5 object-cover rounded-xl" />
+        <div class="p-3">
+          <p class="text-sm font-semibold text-blue-800">News</p>
+          <p class="text-xs text-black">kamis 2 Juni 2023</p>
+          <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin black.</p>
+        </div>
+      </div></a>
+      <a href="#"><div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
+        <img src="{{ asset('images/news.png') }}" alt="News 1" class="h-full w-2/5 object-cover rounded-xl" />
+        <div class="p-3">
+          <p class="text-sm font-semibold text-blue-800">News</p>
+          <p class="text-xs text-black">kamis 2 Juni 2023</p>
+          <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin black.</p>
+        </div>
+      </div></a>
+      <a href=""><span class="flex text-blue-600 font-bold justify-center items-center m-2 hover:underline">Artikel Lainnya ></span></a>
+    </div>
+    </div>
+    </div>  
+    <div class="container">
       <div class="flex mb-5">
-        <div class="bg-[#5375F0] h-10 w-5"></div>
+        <div class="bg-[#00A9FF] h-10 w-5"></div>
         <h1 class="text-4xl font-semibold ml-3">Travel</h1>
       </div>
-      <div class="relative h-[270px]">
+      <a href="/entertaiment"><div class="relative h-[270px] transition-transform duration-300 transform hover:scale-105">
         <img src="{{ asset('images/travel.png') }}" alt="Deskripsi gambar" class="h-full w-full rounded-xl" />
         <div class="absolute inset-0 flex items-end justify-start">
           <div class="w-full bg-gradient-to-b from-transparent to-[#4F4D4D] text-white p-4 rounded-b-xl">
             <p class="text-lg font-semibold">Lorem ipsum dolor sit amet</p>
           </div>
         </div>
-      </div>
-    </div> 
-    <div class="">
+      </div></a>
+      <div class="md:hidden block my-5">
+    <div class="grid grid-rows-5 gap-4">
+      <a href="#"><div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
+        <img src="{{ asset('images/travel.png') }}" alt="News 1" class="h-full w-2/5 object-cover rounded-xl" />
+        <div class="p-3">
+          <p class="text-sm font-semibold text-blue-800">Travel</p>
+          <p class="text-xs text-black">kamis 2 Juni 2023</p>
+          <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin black.</p>
+        </div>
+      </div></a>
+      <a href="#"><div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
+        <img src="{{ asset('images/travel.png') }}" alt="News 1" class="h-full w-2/5 object-cover rounded-xl" />
+        <div class="p-3">
+          <p class="text-sm font-semibold text-blue-800">Travel</p>
+          <p class="text-xs text-black">kamis 2 Juni 2023</p>
+          <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin black.</p>
+        </div>
+      </div></a>
+      <a href="#"><div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
+        <img src="{{ asset('images/travel.png') }}" alt="News 1" class="h-full w-2/5 object-cover rounded-xl" />
+        <div class="p-3">
+          <p class="text-sm font-semibold text-blue-800">Travel</p>
+          <p class="text-xs text-black">kamis 2 Juni 2023</p>
+          <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin black.</p>
+        </div>
+      </div></a>
+      <a href="#"><div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
+        <img src="{{ asset('images/travel.png') }}" alt="News 1" class="h-full w-2/5 object-cover rounded-xl" />
+        <div class="p-3">
+          <p class="text-sm font-semibold text-blue-800">Travel</p>
+          <p class="text-xs text-black">kamis 2 Juni 2023</p>
+          <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin black.</p>
+        </div>
+      </div></a>
+      <a href="#"><div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
+        <img src="{{ asset('images/travel.png') }}" alt="News 1" class="h-full w-2/5 object-cover rounded-xl" />
+        <div class="p-3">
+          <p class="text-sm font-semibold text-blue-800">Travel</p>
+          <p class="text-xs text-black">kamis 2 Juni 2023</p>
+          <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin black.</p>
+        </div>
+      </div></a>
+      <a href=""><span class="flex text-blue-600 font-bold justify-center items-center m-2 hover:underline">Artikel Lainnya ></span></a>
+    </div>
+    </div>
+    </div>  
+    <div class="container">
       <div class="flex mb-5">
-        <div class="bg-[#E180FF] h-10 w-5"></div>
+        <div class="bg-[#00A9FF] h-10 w-5"></div>
         <h1 class="text-4xl font-semibold ml-3">Finance</h1>
       </div>
-      <div class="relative h-[270px]">
+      <a href="/entertaiment"><div class="relative h-[270px] transition-transform duration-300 transform hover:scale-105">
         <img src="{{ asset('images/finance.png') }}" alt="Deskripsi gambar" class="h-full w-full rounded-xl" />
         <div class="absolute inset-0 flex items-end justify-start">
           <div class="w-full bg-gradient-to-b from-transparent to-[#4F4D4D] text-white p-4 rounded-b-xl">
             <p class="text-lg font-semibold">Lorem ipsum dolor sit amet</p>
           </div>
         </div>
-      </div>
-    </div> 
-    <div class="">
+      </div></a>
+      <div class="md:hidden block my-5">
+    <div class="grid grid-rows-5 gap-4">
+      <a href="#"><div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
+        <img src="{{ asset('images/finance.png') }}" alt="News 1" class="h-full w-2/5 object-cover rounded-xl" />
+        <div class="p-3">
+          <p class="text-sm font-semibold text-blue-800">Finance</p>
+          <p class="text-xs text-black">kamis 2 Juni 2023</p>
+          <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin black.</p>
+        </div>
+      </div></a>
+      <a href="#"><div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
+        <img src="{{ asset('images/finance.png') }}" alt="News 1" class="h-full w-2/5 object-cover rounded-xl" />
+        <div class="p-3">
+          <p class="text-sm font-semibold text-blue-800">Finance</p>
+          <p class="text-xs text-black">kamis 2 Juni 2023</p>
+          <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin black.</p>
+        </div>
+      </div></a>
+      <a href="#"><div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
+        <img src="{{ asset('images/finance.png') }}" alt="News 1" class="h-full w-2/5 object-cover rounded-xl" />
+        <div class="p-3">
+          <p class="text-sm font-semibold text-blue-800">Finance</p>
+          <p class="text-xs text-black">kamis 2 Juni 2023</p>
+          <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin black.</p>
+        </div>
+      </div></a>
+      <a href="#"><div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
+        <img src="{{ asset('images/finance.png') }}" alt="News 1" class="h-full w-2/5 object-cover rounded-xl" />
+        <div class="p-3">
+          <p class="text-sm font-semibold text-blue-800">Finance</p>
+          <p class="text-xs text-black">kamis 2 Juni 2023</p>
+          <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin black.</p>
+        </div>
+      </div></a>
+      <a href="#"><div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
+        <img src="{{ asset('images/finance.png') }}" alt="News 1" class="h-full w-2/5 object-cover rounded-xl" />
+        <div class="p-3">
+          <p class="text-sm font-semibold text-blue-800">Finance</p>
+          <p class="text-xs text-black">kamis 2 Juni 2023</p>
+          <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin black.</p>
+        </div>
+      </div></a>
+      <a href=""><span class="flex text-blue-600 font-bold justify-center items-center m-2 hover:underline">Artikel Lainnya ></span></a>
+    </div>
+    </div>
+    </div>  
+    <div class="container">
       <div class="flex mb-5">
-        <div class="bg-[#FFB84C] h-10 w-5"></div>
-        <h1 class="text-4xl font-semibold ml-3">Sport</h1>
+        <div class="bg-[#00A9FF] h-10 w-5"></div>
+        <h1 class="text-4xl font-semibold ml-3">Sports</h1>
       </div>
-      <div class="relative h-[270px]">
+      <a href="/entertaiment"><div class="relative h-[270px] transition-transform duration-300 transform hover:scale-105">
         <img src="{{ asset('images/sports.png') }}" alt="Deskripsi gambar" class="h-full w-full rounded-xl" />
         <div class="absolute inset-0 flex items-end justify-start">
           <div class="w-full bg-gradient-to-b from-transparent to-[#4F4D4D] text-white p-4 rounded-b-xl">
             <p class="text-lg font-semibold">Lorem ipsum dolor sit amet</p>
           </div>
         </div>
-      </div>
-    </div> 
-    <div class="">
+      </div></a>
+      <div class="md:hidden block my-5">
+    <div class="grid grid-rows-5 gap-4">
+      <a href="#"><div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
+        <img src="{{ asset('images/sports.png') }}" alt="News 1" class="h-full w-2/5 object-cover rounded-xl" />
+        <div class="p-3">
+          <p class="text-sm font-semibold text-blue-800">Sports</p>
+          <p class="text-xs text-black">kamis 2 Juni 2023</p>
+          <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin black.</p>
+        </div>
+      </div></a>
+      <a href="#"><div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
+        <img src="{{ asset('images/sports.png') }}" alt="News 1" class="h-full w-2/5 object-cover rounded-xl" />
+        <div class="p-3">
+          <p class="text-sm font-semibold text-blue-800">Sports</p>
+          <p class="text-xs text-black">kamis 2 Juni 2023</p>
+          <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin black.</p>
+        </div>
+      </div></a>
+      <a href="#"><div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
+        <img src="{{ asset('images/sports.png') }}" alt="News 1" class="h-full w-2/5 object-cover rounded-xl" />
+        <div class="p-3">
+          <p class="text-sm font-semibold text-blue-800">Sports</p>
+          <p class="text-xs text-black">kamis 2 Juni 2023</p>
+          <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin black.</p>
+        </div>
+      </div></a>
+      <a href="#"><div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
+        <img src="{{ asset('images/sports.png') }}" alt="News 1" class="h-full w-2/5 object-cover rounded-xl" />
+        <div class="p-3">
+          <p class="text-sm font-semibold text-blue-800">Sports</p>
+          <p class="text-xs text-black">kamis 2 Juni 2023</p>
+          <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin black.</p>
+        </div>
+      </div></a>
+      <a href="#"><div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
+        <img src="{{ asset('images/sports.png') }}" alt="News 1" class="h-full w-2/5 object-cover rounded-xl" />
+        <div class="p-3">
+          <p class="text-sm font-semibold text-blue-800">Sports</p>
+          <p class="text-xs text-black">kamis 2 Juni 2023</p>
+          <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin black.</p>
+        </div>
+      </div></a>
+      <a href=""><span class="flex text-blue-600 font-bold justify-center items-center m-2 hover:underline">Artikel Lainnya ></span></a>
+    </div>
+    </div>
+    </div>  
+    <div class="container">
       <div class="flex mb-5">
-        <div class="bg-[#FB88B4] h-10 w-5"></div>
+        <div class="bg-[#00A9FF] h-10 w-5"></div>
         <h1 class="text-4xl font-semibold ml-3">Education</h1>
       </div>
-      <div class="relative h-[270px]">
+      <a href="/entertaiment"><div class="relative h-[270px] transition-transform duration-300 transform hover:scale-105">
         <img src="{{ asset('images/education.png') }}" alt="Deskripsi gambar" class="h-full w-full rounded-xl" />
         <div class="absolute inset-0 flex items-end justify-start">
           <div class="w-full bg-gradient-to-b from-transparent to-[#4F4D4D] text-white p-4 rounded-b-xl">
             <p class="text-lg font-semibold">Lorem ipsum dolor sit amet</p>
           </div>
         </div>
-      </div>
-    </div> 
-    <div class="">
+      </div></a>
+      <div class="md:hidden block my-5">
+    <div class="grid grid-rows-5 gap-4">
+      <a href="#"><div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
+        <img src="{{ asset('images/education.png') }}" alt="News 1" class="h-full w-2/5 object-cover rounded-xl" />
+        <div class="p-3">
+          <p class="text-sm font-semibold text-blue-800">Education</p>
+          <p class="text-xs text-black">kamis 2 Juni 2023</p>
+          <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin black.</p>
+        </div>
+      </div></a>
+      <a href="#"><div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
+        <img src="{{ asset('images/education.png') }}" alt="News 1" class="h-full w-2/5 object-cover rounded-xl" />
+        <div class="p-3">
+          <p class="text-sm font-semibold text-blue-800">Education</p>
+          <p class="text-xs text-black">kamis 2 Juni 2023</p>
+          <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin black.</p>
+        </div>
+      </div></a>
+      <a href="#"><div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
+        <img src="{{ asset('images/education.png') }}" alt="News 1" class="h-full w-2/5 object-cover rounded-xl" />
+        <div class="p-3">
+          <p class="text-sm font-semibold text-blue-800">Education</p>
+          <p class="text-xs text-black">kamis 2 Juni 2023</p>
+          <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin black.</p>
+        </div>
+      </div></a>
+      <a href="#"><div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
+        <img src="{{ asset('images/education.png') }}" alt="News 1" class="h-full w-2/5 object-cover rounded-xl" />
+        <div class="p-3">
+          <p class="text-sm font-semibold text-blue-800">Education</p>
+          <p class="text-xs text-black">kamis 2 Juni 2023</p>
+          <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin black.</p>
+        </div>
+      </div></a>
+      <a href="#"><div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
+        <img src="{{ asset('images/education.png') }}" alt="News 1" class="h-full w-2/5 object-cover rounded-xl" />
+        <div class="p-3">
+          <p class="text-sm font-semibold text-blue-800">Education</p>
+          <p class="text-xs text-black">kamis 2 Juni 2023</p>
+          <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin black.</p>
+        </div>
+      </div></a>
+      <a href=""><span class="flex text-blue-600 font-bold justify-center items-center m-2 hover:underline">Artikel Lainnya ></span></a>
+    </div>
+    </div>
+    </div>  
+    <div class="container">
       <div class="flex mb-5">
-        <div class="bg-[#FF7DE2] h-10 w-5"></div>
+        <div class="bg-[#00A9FF] h-10 w-5"></div>
         <h1 class="text-4xl font-semibold ml-3">Tech</h1>
       </div>
-      <div class="relative h-[270px]">
+      <a href="/entertaiment"><div class="relative h-[270px] transition-transform duration-300 transform hover:scale-105">
         <img src="{{ asset('images/tech.png') }}" alt="Deskripsi gambar" class="h-full w-full rounded-xl" />
         <div class="absolute inset-0 flex items-end justify-start">
           <div class="w-full bg-gradient-to-b from-transparent to-[#4F4D4D] text-white p-4 rounded-b-xl">
             <p class="text-lg font-semibold">Lorem ipsum dolor sit amet</p>
           </div>
         </div>
+      </div></a>
+      <div class="md:hidden block my-5">
+    <div class="grid grid-rows-5 gap-4">
+      <a href="#"><div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
+        <img src="{{ asset('images/tech.png') }}" alt="News 1" class="h-full w-2/5 object-cover rounded-xl" />
+        <div class="p-3">
+          <p class="text-sm font-semibold text-blue-800">Tech</p>
+          <p class="text-xs text-black">kamis 2 Juni 2023</p>
+          <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin black.</p>
+        </div>
+      </div></a>
+      <a href="#"><div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
+        <img src="{{ asset('images/tech.png') }}" alt="News 1" class="h-full w-2/5 object-cover rounded-xl" />
+        <div class="p-3">
+          <p class="text-sm font-semibold text-blue-800">Tech</p>
+          <p class="text-xs text-black">kamis 2 Juni 2023</p>
+          <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin black.</p>
+        </div>
+      </div></a>
+      <a href="#"><div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
+        <img src="{{ asset('images/tech.png') }}" alt="News 1" class="h-full w-2/5 object-cover rounded-xl" />
+        <div class="p-3">
+          <p class="text-sm font-semibold text-blue-800">Tech</p>
+          <p class="text-xs text-black">kamis 2 Juni 2023</p>
+          <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin black.</p>
+        </div>
+      </div></a>
+      <a href="#"><div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
+        <img src="{{ asset('images/tech.png') }}" alt="News 1" class="h-full w-2/5 object-cover rounded-xl" />
+        <div class="p-3">
+          <p class="text-sm font-semibold text-blue-800">Tech</p>
+          <p class="text-xs text-black">kamis 2 Juni 2023</p>
+          <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin black.</p>
+        </div>
+      </div></a>
+      <a href="#"><div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
+        <img src="{{ asset('images/tech.png') }}" alt="News 1" class="h-full w-2/5 object-cover rounded-xl" />
+        <div class="p-3">
+          <p class="text-sm font-semibold text-blue-800">Tech</p>
+          <p class="text-xs text-black">kamis 2 Juni 2023</p>
+          <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin black.</p>
+        </div>
+      </div></a>
+      <a href=""><span class="flex text-blue-600 font-bold justify-center items-center m-2 hover:underline">Artikel Lainnya ></span></a>
+    </div>
+    </div>
+    </div>  
       </div>
     </div> 
   </div>
