@@ -19,7 +19,7 @@
 </head>
 <body>
 <header>
-  <nav class="bg-white p-4 mx-2 md:mx-20 my-4">
+  <nav class="bg-white px-4 py-2 mx-2 md:mx-20 my-4">
         <div class="flex items-center justify-between">
             <!-- logo youtz -->
             <div class="font-bold text-lg flex items-center">
