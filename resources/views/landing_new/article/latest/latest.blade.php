@@ -215,7 +215,7 @@
         <h1 class="text-4xl">Rekomendasi</h1>
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-10 px-3 sm:my-10">  
-        <div class="relative bg-black h-[262px] border-1 border-black w-full rounded-xl shadow-3xl inset overflow-hidden">
+        <div class="relative bg-black h-[302px] border-1 border-black w-full rounded-xl shadow-3xl inset overflow-hidden transition-transform duration-300 transform hover:scale-105">
           <img src="{{ asset('images/latest1.png') }}" alt="" class="w-full h-full object-cover">
           <div class="absolute inset-0 flex items-end justify-start">
             <div class="w-full bg-gradient-to-b from-transparent to-black text-white p-4 rounded-b-xl">
@@ -223,7 +223,7 @@
             </div>
           </div>    
         </div>
-        <div class="relative bg-black h-[262px] border-1 border-black w-full rounded-xl shadow-3xl inset overflow-hidden">
+        <div class="relative bg-black h-[302px] border-1 border-black w-full rounded-xl shadow-3xl inset overflow-hidden transition-transform duration-300 transform hover:scale-105">
           <img src="{{ asset('images/latest1.png') }}" alt="" class="w-full h-full object-cover">   
           <div class="absolute inset-0 flex items-end justify-start">
             <div class="w-full bg-gradient-to-b from-transparent to-black text-white p-4 rounded-b-xl">
@@ -231,7 +231,7 @@
             </div>
           </div> 
         </div>
-        <div class="relative bg-black h-[262px] border-1 border-black w-full rounded-xl shadow-3xl inset overflow-hidden">
+        <div class="relative bg-black h-[302px] border-1 border-black w-full rounded-xl shadow-3xl inset overflow-hidden transition-transform duration-300 transform hover:scale-105">
           <img src="{{ asset('images/latest1.png') }}" alt="" class="w-full h-full object-cover">  
           <div class="absolute inset-0 flex items-end justify-start">
             <div class="w-full bg-gradient-to-b from-transparent to-black text-white p-4 rounded-b-xl">
@@ -239,7 +239,7 @@
             </div>
           </div>  
         </div>
-        <div class="relative bg-black h-[262px] border-1 border-black w-full rounded-xl shadow-3xl inset overflow-hidden">
+        <div class="relative bg-black h-[302px] border-1 border-black w-full rounded-xl shadow-3xl inset overflow-hidden transition-transform duration-300 transform hover:scale-105">
           <img src="{{ asset('images/latest1.png') }}" alt="" class="w-full h-full object-cover">    
           <div class="absolute inset-0 flex items-end justify-start">
             <div class="w-full bg-gradient-to-b from-transparent to-black text-white p-4 rounded-b-xl">
@@ -247,7 +247,7 @@
             </div>
           </div>
         </div>
-        <div class="relative bg-black h-[262px] border-1 border-black w-full rounded-xl shadow-3xl inset overflow-hidden">
+        <div class="relative bg-black h-[302px] border-1 border-black w-full rounded-xl shadow-3xl inset overflow-hidden transition-transform duration-300 transform hover:scale-105">
           <img src="{{ asset('images/latest1.png') }}" alt="" class="w-full h-full object-cover">    
           <div class="absolute inset-0 flex items-end justify-start">
             <div class="w-full bg-gradient-to-b from-transparent to-black text-white p-4 rounded-b-xl">
@@ -255,7 +255,7 @@
             </div>
           </div>
         </div>
-        <div class="relative bg-black h-[262px] border-1 border-black w-full rounded-xl shadow-3xl inset overflow-hidden">
+        <div class="relative bg-black h-[302px] border-1 border-black w-full rounded-xl shadow-3xl inset overflow-hidden transition-transform duration-300 transform hover:scale-105">
           <img src="{{ asset('images/latest1.png') }}" alt="" class="w-full h-full object-cover">    
           <div class="absolute inset-0 flex items-end justify-start">
             <div class="w-full bg-gradient-to-b from-transparent to-black text-white p-4 rounded-b-xl">
@@ -266,17 +266,41 @@
       </div>
     </div>
 
-    <div class="md:w-1/3 md:order-2 py-20 px-10">
+    <div class="md:w-1/3 md:order-2 px-5">
       <div class="flex justify-start items-start p-3">
         <div class="bg-[#00A9FF] h-10 w-5"></div>
         <h1 class="text-4xl">Berita Terpopuler</h1>
       </div>
       <hr class="border-black">
       <div class="grid grid-rows-5 grid-flow-col gap-4">
-        <div class="flex justify-start items-start font-semibold p-5 mt-2"><span class="font-bold text-3xl mr-5">#1</span>Pertumbuhan Ekonomi Amerika Melesat 6,9% pada 2021 Meski ada Omicron</div>
-        <div class="flex justify-start items-start font-semibold p-5"><span class="font-bold text-3xl mr-5">#2</span>Pertumbuhan Ekonomi Amerika Melesat 6,9% pada 2021 Meski ada Omicron</div>
-        <div class="flex justify-start items-start font-semibold p-5"><span class="font-bold text-3xl mr-5">#3</span>Pertumbuhan Ekonomi Amerika Melesat 6,9% pada 2021 Meski ada Omicron</div>
-        <div class="flex justify-start items-start font-semibold p-5"><span class="font-bold text-3xl mr-5">#4</span>Pertumbuhan Ekonomi Amerika Melesat 6,9% pada 2021 Meski ada Omicron</div>
+        <div class="flex justify-start items-start p-5 mt-2">
+          <div class="flex items-center justify-center w-26 h-[40px] bg-[#EDEDED] rounded-[120px] text-3xl font-bold mr-5">#1</div>
+            <div>
+              <h1 class="text-lg font-semibold">Pertumbuhan Ekonomi Amerika Melesat 6,9% pada 2021 Meski ada Omicron</h1>
+              <p>Politik | <time datetime="2023-06-19T04:00:00Z">4 jam yang lalu</time></p>
+            </div>
+          </div>
+          <div class="flex justify-start items-start p-5 mt-2">
+          <div class="flex items-center justify-center w-26 h-[40px] bg-[#EDEDED] rounded-[120px] text-3xl font-bold mr-5">#2</div>
+            <div>
+              <h1 class="text-lg font-semibold">Pertumbuhan Ekonomi Amerika Melesat 6,9% pada 2021 Meski ada Omicron</h1>
+              <p>Politik | <time datetime="2023-06-19T04:00:00Z">4 jam yang lalu</time></p>
+            </div>
+          </div>
+          <div class="flex justify-start items-start p-5 mt-2">
+          <div class="flex items-center justify-center w-26 h-[40px] bg-[#EDEDED] rounded-[120px] text-3xl font-bold mr-5">#3</div>
+            <div>
+              <h1 class="text-lg font-semibold">Pertumbuhan Ekonomi Amerika Melesat 6,9% pada 2021 Meski ada Omicron</h1>
+              <p>Politik | <time datetime="2023-06-19T04:00:00Z">4 jam yang lalu</time></p>
+            </div>
+          </div>
+          <div class="flex justify-start items-start p-5 mt-2">
+          <div class="flex items-center justify-center w-26 h-[40px] bg-[#EDEDED] rounded-[120px] text-3xl font-bold mr-5">#4</div>
+            <div>
+              <h1 class="text-lg font-semibold">Pertumbuhan Ekonomi Amerika Melesat 6,9% pada 2021 Meski ada Omicron</h1>
+              <p>Politik | <time datetime="2023-06-19T04:00:00Z">4 jam yang lalu</time></p>
+            </div>
+          </div>
         <div class="flex justify-center items-center text-xl text-[#00A9FF] font-bold">Terpopuler lainnya</div>
       </div>
     </div>
