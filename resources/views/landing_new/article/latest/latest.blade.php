@@ -288,44 +288,63 @@
   <div class="md:w-2/3 mb-4 md:mb-0 p-4 md:p-20 order-2 md:order-1">
     <div class="flex justify-start items-start p-4 md:p-10">
       <div class="bg-[#00A9FF] h-10 w-5"></div>
-      <h1 class="text-4xl ml-2">Berita Baru</h1>
+      <h1 class="text-4xl ml-2">Berita Terbaru</h1>
     </div>
     <hr class="border-black">
-    <div class="bg-white px-4 py-10">
-      <div class="flex flex-col gap-10">
-        <div class="flex items-start">
-          <img src="{{ asset('images/latest1.png') }}" alt="" class="rounded-xl h-24 w-24 md:h-auto md:w-auto">
-          <div class="flex flex-col p-2 justify-center items-start py-5">
-            <p class="font-bold">Mendalaminya bagaimana komputer kuantum akan mengubah paradigma komputasi saat ini.</p>
-            <span class="mt-2 mb-2 font-bold text-orange-300">Food</span>
-            <span class="text-sm">Senin 15 November 2023</span>
+    <div class="grid grid-rows-5 gap-4 p-5">
+      <a href="#">
+        <div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
+          <img src="{{ asset('images/latest1.png') }}" alt="Berita 1" class="h-full w-1/4 object-cover rounded-xl" />
+          <div class="p-3">
+            <p class="text-sm font-semibold text-blue-800">Entertaiment</p>
+            <p class="text-xs text-black">Kamis 2 Juni 2023</p>
+            <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin.</p>
           </div>
         </div>
-        <div class="flex items-start">
-          <img src="{{ asset('images/latest1.png') }}" alt="" class="rounded-xl h-24 w-24 md:h-auto md:w-auto">
-          <div class="flex flex-col p-2">
-            <p class="font-semibold">Mendalaminya bagaimana komputer kuantum akan mengubah paradigma komputasi saat ini.</p>
-            <span class="mt-2 mb-2 font-bold text-orange-300">Food</span>
-            <span class="text-sm">Senin 15 November 2023</span>
+      </a>
+      <a href="#">
+        <div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
+          <img src="{{ asset('images/latest1.png') }}" alt="Berita 2" class="h-full w-1/4 object-cover rounded-xl" />
+          <div class="p-3">
+            <p class="text-sm font-semibold text-blue-800">Entertaiment</p>
+            <p class="text-xs text-black">Kamis 2 Juni 2023</p>
+            <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin.</p>
           </div>
         </div>
-        <div class="flex items-start">
-          <img src="{{ asset('images/latest1.png') }}" alt="" class="rounded-xl h-24 w-24 md:h-auto md:w-auto">
-          <div class="flex flex-col p-2">
-            <p class="font-semibold">Mendalaminya bagaimana komputer kuantum akan mengubah paradigma komputasi saat ini.</p>
-            <span class="mt-2 mb-2 font-bold text-orange-300">Food</span>
-            <span class="text-sm">Senin 15 November 2023</span>
+      </a>
+      <a href="#">
+        <div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
+          <img src="{{ asset('images/latest1.png') }}" alt="Berita 3" class="h-full w-1/4 object-cover rounded-xl" />
+          <div class="p-3">
+            <p class="text-sm font-semibold text-blue-800">Entertaiment</p>
+            <p class="text-xs text-black">Kamis 2 Juni 2023</p>
+            <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin.</p>
           </div>
         </div>
-        <div class="flex items-start">
-          <img src="{{ asset('images/latest1.png') }}" alt="" class="rounded-xl h-24 w-24 md:h-auto md:w-auto">
-          <div class="flex flex-col p-2">
-            <p class="font-semibold">Mendalaminya bagaimana komputer kuantum akan mengubah paradigma komputasi saat ini.</p>
-            <span class="mt-2 mb-2 font-bold text-orange-300">Food</span>
-            <span class="text-sm">Senin 15 November 2023</span>
+      </a>
+      <a href="#">
+        <div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
+          <img src="{{ asset('images/latest1.png') }}" alt="Berita 4" class="h-full w-1/4 object-cover rounded-xl" />
+          <div class="p-3">
+            <p class="text-sm font-semibold text-blue-800">Entertaiment</p>
+            <p class="text-xs text-black">Kamis 2 Juni 2023</p>
+            <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin.</p>
           </div>
         </div>
-      </div>
+      </a>
+      <a href="#">
+        <div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
+          <img src="{{ asset('images/latest1.png') }}" alt="Berita 5" class="h-full w-1/4 object-cover rounded-xl" />
+          <div class="p-3">
+            <p class="text-sm font-semibold text-blue-800">Entertaiment</p>
+            <p class="text-xs text-black">Kamis 2 Juni 2023</p>
+            <p class="text-xs text-black font-semibold mt-2">Lorem ipsum dolor sit amet consectetur. Eget purus arcu risus massa sit sollicitudin.</p>
+          </div>
+        </div>
+      </a>
+      <a href="#">
+        <span class="flex text-blue-600 font-bold justify-center items-center m-2 hover:underline">Artikel Lainnya ></span>
+      </a>
     </div>
   </div>
 
@@ -335,6 +354,13 @@
       <h1 class="text-4xl ml-2">Follow Us :</h1>
     </div>
     <hr class="border-black">
+    <div class="flex justify-center items-center space-x-4 mt-4">
+        <a href="https://www.instagram.com/mhdirfaan__/"><img src="{{ asset('images/ig.png') }}" alt="Icon 1" class="h-12 w-12 rounded-[30px]" /></a>
+        <a href="#"><img src="{{ asset('images/tele.png') }}" alt="Icon 2" class="h-12 w-12 rounded-[30px]" /></a>
+        <a href="#"><img src="{{ asset('images/yt.png') }}" alt="Icon 3" class="h-12 w-12 rounded-[30px]" /></a>
+        <a href="#"><img src="{{ asset('images/tt.png') }}" alt="Icon 4" class="h-12 w-12 rounded-[30px]" /></a>
+        <a href="#"><img src="{{ asset('images/wa.png') }}" alt="Icon 5" class="h-12 w-12 rounded-[30px]" /></a>
+      </div>
     <div class="bg-white p-4">
       <div class="bg-[#E4E4E4] p-10 md:p-20 h-auto md:h-[550px]">
         <h1 class="flex justify-center items-center text-3xl font-bold p-10">Ads / iklan posisi tidak fixed</h1>
@@ -361,7 +387,7 @@
       <div class="md:hidden block my-5">
     <div class="grid grid-rows-5 gap-4">
       <a href="#"><div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
-        <img src="{{ asset('images/latest1.png') }}" alt="News 1" class="h-full w-2/5 object-cover rounded-xl" />
+      <img src="{{ asset('images/latest1.png') }}" alt="News 1" class="h-full w-2/5 object-cover rounded-xl" />
         <div class="p-3">
           <p class="text-sm font-semibold text-blue-800">Entertaiment</p>
           <p class="text-xs text-black">kamis 2 Juni 2023</p>
