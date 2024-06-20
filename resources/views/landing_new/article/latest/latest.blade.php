@@ -134,26 +134,26 @@
     <div class="hidden lg:block w-full lg:w-1/3 mt-4 sm:ml-4 py-20 mr-7">
       <div class="flex flex-col gap-9">
         <a href="/articlefood">
-        <div class="flex items-start md:h-30 h-44 rounded-xl overflow-hidden md:px-5 lg:p-0">
-          <img src="{{ asset('images/latest1.png') }}" alt="" class="rounded-xl sm:h-20 md:h-40 lg:h-36 xl:h-44 w-[220px] md:ml-10 lg:m-0">
-          <div class="flex flex-col mx-2 gap-2">
+        <div class="flex items-start md:h-30 h-44 rounded-xl overflow-hidden md:px-5 lg:p-0 transition-transform duration-300 transform hover:scale-105">
+          <img src="{{ asset('images/food.png') }}" alt="" class="rounded-xl sm:h-20 md:h-40 lg:h-36 xl:h-44 w-[220px] md:ml-10 lg:m-0">
+          <div class="flex flex-col mx-2 gap-2 hover:underline">
             <span class="font-bold text-orange-300">Food</span>
             <span class="text-sm">Senin 15 November 2023</span>
-            <p class="font-semibold md:text-xs">Mendalaminya bagaimana komputer kuantum akan mengubah paradigma komputasi saat ini.</p>
+            <p class="font-semibold">Mendalaminya bagaimana komputer kuantum akan mengubah paradigma komputasi saat ini.</p>
           </div>
         </div>
       </a>
-        <div class="flex items-start h-44 rounded-xl overflow-hidden">
-          <img src="{{ asset('images/latest1.png') }}" alt="" class="rounded-xl h-full w-[220px]">
-          <div class="flex flex-col mx-2 gap-2">
+        <div class="flex items-start h-44 rounded-xl overflow-hidden transition-transform duration-300 transform hover:scale-105">
+          <img src="{{ asset('images/health.png') }}" alt="" class="rounded-xl h-full w-[220px]">
+          <div class="flex flex-col mx-2 gap-2 hover:underline">
             <span class=" font-bold text-[#00A9FF]">Health</span>
             <span class="text-sm">Senin 15 November 2023</span>
             <p class="font-semibold">Mendalaminya bagaimana komputer kuantum akan mengubah paradigma komputasi saat ini.</p>
           </div>
         </div>
-        <div class="flex items-start h-44 rounded-xl overflow-hidden">
-          <img src="{{ asset('images/latest1.png') }}" alt="" class="rounded-xl h-full w-[220px]">
-          <div class="flex flex-col mx-2 gap-2">
+        <div class="flex items-start h-44 rounded-xl overflow-hidden transition-transform duration-300 transform hover:scale-105">
+          <img src="{{ asset('images/sports.png') }}" alt="" class="rounded-xl h-full w-[220px]">
+          <div class="flex flex-col mx-2 gap-2 hover:underline">
             <span class=" font-bold text-[#EE463C]">Sport</span>
             <span class="text-sm">Senin 15 November 2023</span>
             <p class="font-semibold">Mendalaminya bagaimana komputer kuantum akan mengubah paradigma komputasi saat ini.</p>
@@ -273,35 +273,47 @@
       </div>
       <hr class="border-black">
       <div class="grid grid-rows-5 grid-flow-col gap-4">
-        <div class="flex justify-start items-start p-5 mt-2">
+        <a href="#">
+        <div class="flex justify-start items-start p-5 mt-2 hover:underline">
           <div class="flex items-center justify-center w-26 h-[40px] bg-[#EDEDED] rounded-[120px] text-3xl font-bold mr-5">#1</div>
             <div>
               <h1 class="text-lg font-semibold">Pertumbuhan Ekonomi Amerika Melesat 6,9% pada 2021 Meski ada Omicron</h1>
               <p>Politik | <time datetime="2023-06-19T04:00:00Z">4 jam yang lalu</time></p>
             </div>
           </div>
-          <div class="flex justify-start items-start p-5 mt-2">
+          </a>
+          <a href="#">
+          <div class="flex justify-start items-start p-5 mt-2 hover:underline">
           <div class="flex items-center justify-center w-26 h-[40px] bg-[#EDEDED] rounded-[120px] text-3xl font-bold mr-5">#2</div>
             <div>
               <h1 class="text-lg font-semibold">Pertumbuhan Ekonomi Amerika Melesat 6,9% pada 2021 Meski ada Omicron</h1>
               <p>Politik | <time datetime="2023-06-19T04:00:00Z">4 jam yang lalu</time></p>
             </div>
           </div>
-          <div class="flex justify-start items-start p-5 mt-2">
+          </a>
+          <a href="#">
+          <div class="flex justify-start items-start p-5 mt-2 hover:underline">
           <div class="flex items-center justify-center w-26 h-[40px] bg-[#EDEDED] rounded-[120px] text-3xl font-bold mr-5">#3</div>
             <div>
               <h1 class="text-lg font-semibold">Pertumbuhan Ekonomi Amerika Melesat 6,9% pada 2021 Meski ada Omicron</h1>
               <p>Politik | <time datetime="2023-06-19T04:00:00Z">4 jam yang lalu</time></p>
             </div>
           </div>
-          <div class="flex justify-start items-start p-5 mt-2">
+          </a>
+          <a href="#">
+          <div class="flex justify-start items-start p-5 mt-2 hover:underline">
           <div class="flex items-center justify-center w-26 h-[40px] bg-[#EDEDED] rounded-[120px] text-3xl font-bold mr-5">#4</div>
             <div>
               <h1 class="text-lg font-semibold">Pertumbuhan Ekonomi Amerika Melesat 6,9% pada 2021 Meski ada Omicron</h1>
               <p>Politik | <time datetime="2023-06-19T04:00:00Z">4 jam yang lalu</time></p>
             </div>
           </div>
-        <div class="flex justify-center items-center text-xl text-[#00A9FF] font-bold">Terpopuler lainnya</div>
+          </a>
+          <div class="my-5">
+            <a href="/news">
+              <div class="flex justify-center items-center text-xl text-[#00A9FF] font-bold hover:underline">Terpopuler lainnya</div>
+            </a>
+          </div>
       </div>
     </div>
 

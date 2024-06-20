@@ -156,10 +156,10 @@ $articles2 = [
 
     <!-- Bagian Kiri (Text) -->
     <div class="lg:w-2/3 lg:order-first mb-10 lg:mb-0 flex flex-col justify-center">
-      <div class="bg-[#EDEDED] h-[587px] rounded-[25px] shadow-xl">
+      <div class="h-[319px] md:h-[587px] rounded-[25px] shadow-xl">
         <div class="flex flex-row relative">
           <div class="bg-black h-[314px] w-full rounded-t-[15px] relative">
-              <img src="{{ asset('images/latest1.png') }}" alt="Deskripsi Gambar" class="w-full h-full object-cover rounded-t-[15px]">
+              <img src="{{ asset('images/latest1.png') }}" alt="Deskripsi Gambar" class="w-full h-full object-cover rounded-[15px] md:rounded-t-[15px]">
               <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-[#00A9FF]"></div>
             <div class="absolute top-0 left-0 w-full h-full flex items-end justify-start p-5 text-white">
               <p>Ngeri! Resesi Amerika Bakal Terjadi Mulai Kuartal I/2024</p>
@@ -167,7 +167,8 @@ $articles2 = [
           </div>
         </div>
       
-      <div class="flex">
+      <div class="hidden md:block">
+        <div class="flex">
         <div class="h-[273px] rounded-bl-[15px] w-1/3 overflow-hidden">
             <div class="h-full w-full relative">
                 <img src="{{ asset('images/latest1.png') }}" alt="Deskripsi Gambar" class="w-full h-full rounded-bl-[15px] object-cover">
@@ -196,6 +197,7 @@ $articles2 = [
                 </div>
             </div>
         </div>
+      </div>\
       </div>
     
 
