@@ -108,7 +108,7 @@
         <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black"></div>
         <div class="absolute bottom-0 left-0 flex flex-col justify-end p-5 text-white">
             <span class="relative z-10 bg-black p-2 w-20 text-center rounded-[60px]">Travel</span>    
-            <p class="font-bold text-3xl text-white p-2">5 Rekomendasi Pantai Indah di Wilayah Bali, Wajib Kamu Kunjungi!</p>
+            <p class="font-bold text-lg md:text-3xl text-white p-2">5 Rekomendasi Pantai Indah di Wilayah Bali, Wajib Kamu Kunjungi!</p>
         </div>    
       </div>    
       <div class="hidden sm:grid grid-cols-3 gap-4 my-10">

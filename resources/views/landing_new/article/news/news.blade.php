@@ -234,7 +234,7 @@ $articles2 = [
     <h1 class="text-4xl">Rekomendasi</h1>
   </div>
 
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 p-5 sm:p-10 lg:p-20">
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-10 p-5 sm:p-10 lg:p-20">
     <?php foreach ($articles as $article): ?>
         <div class="flex flex-row relative">
             <div class="bg-black h-64 sm:h-[364px] w-full rounded-[15px] relative overflow-hidden">
@@ -263,14 +263,14 @@ $articles2 = [
             <h1 class="text-4xl ml-2">Berita Baru</h1>
         </div>
         <hr class="border-black">
-        <div class="bg-white px-4 py-10">
-            <div class="flex flex-col gap-10">
+        <div class="">
+            <div class="grid grid-rows-5 gap-4 p-5">
                 <?php foreach ($articles2 as $article2): ?>
-                    <div class="flex items-start">
-                        <img src="<?php echo asset($article2['img']); ?>" alt="Deskripsi Gambar" class="rounded-xl h-24 w-24 md:h-auto md:w-auto">
-                        <div class="flex flex-col p-2 justify-center items-start py-5">
-                            <p class="font-bold"><?php echo $article2['title']; ?></p>
-                            <span class="mt-2 mb-2 font-bold text-orange-300"><?php echo $article2['category']; ?></span>
+                    <div class="h-[110px] flex items-center rounded-lg overflow-hidden hover:underline">
+                        <img src="<?php echo asset($article2['img']); ?>" alt="Deskripsi Gambar" class="h-full w-2/4 object-cover rounded-xl">
+                        <div class="flex flex-col py-5 mx-2 justify-center items-start">
+                            <p class="font-semibold text-sm"><?php echo $article2['title']; ?></p>
+                            <span class="my-1 font-bold text-orange-300 text-sm"><?php echo $article2['category']; ?></span>
                             <span class="text-sm"><?php echo $article2['date']; ?></span>
                         </div>
                     </div>
