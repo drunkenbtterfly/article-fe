@@ -170,7 +170,7 @@
     <h1 class="text-4xl">Highlights</h1>
   </div>
   <hr class="border-black mx-20">
-    <div class="flex justify-between flex-row gap-10 overflow-x-auto px-20 py-10">
+    <div class="flex justify-start md:justify-between flex-row gap-10 overflow-x-auto px-7 py-10">
     <div class="relative">
       <div class="h-80 w-80 overflow-hidden rounded-2xl transition-transform duration-300 transform hover:scale-105">
         <img src="{{ asset('images/latest1.png') }}" alt="" class="h-full w-auto object-fill">
@@ -406,7 +406,7 @@
 
 </div>
 
-  <div class="mt-4 grid md:gird-cols-1 lg:grid-cols-3 gap-20 p-10 md:p-20">
+  <div class="grid md:gird-cols-1 lg:grid-cols-3 gap-20 p-10 md:p-20">
     <div class="container">
       <div class="flex mb-5">
         <div class="bg-[#00A9FF] h-10 w-5"></div>
