@@ -321,7 +321,7 @@
 
   <div class="flex flex-col md:flex-row">
 
-  <div class="md:w-2/3 mb-4 md:mb-0 p-4 md:p-20 order-2 md:order-1">
+  <div class="md:w-2/3 mb-4 md:mb-0 p-4 md:px-20 order-2 md:order-1">
     <div class="flex justify-start items-start p-4 md:p-10">
       <div class="bg-[#00A9FF] h-10 w-5"></div>
       <h1 class="text-4xl ml-2">Berita Terbaru</h1>
@@ -384,7 +384,7 @@
     </div>
   </div>
 
-  <div class="md:w-1/3 p-4 md:p-20 order-1 md:order-2">
+  <div class="md:w-1/3 p-4 md:px-20 order-1 md:order-2">
     <div class="flex justify-start items-start p-4 md:p-10">
       <div class="bg-[#00A9FF] h-10 w-5"></div>
       <h1 class="text-4xl ml-2">Follow Us :</h1>

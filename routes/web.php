@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('../landing_new/article/latest/latest');
 });
 
+Route::get('/test', function () {
+    return view('../landing_new/article/latest/test');
+});
+
 //landing_new
 Route::get('/pencarian', function () {
     return view('pencarian');
